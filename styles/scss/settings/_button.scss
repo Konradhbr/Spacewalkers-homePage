@@ -1,0 +1,28 @@
+/*
+*  ============================
+*    [Button]
+*  ============================
+*/
+
+.button {
+  position: relative;
+  width: max-content;
+  height: max-content;
+
+  &:hover {
+    span {
+      left: 65px;
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 25px;
+    top: 11px;
+    color: $white;
+    font-family: 'Anton-Regular', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+  }
+}

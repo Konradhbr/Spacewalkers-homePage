@@ -1,0 +1,205 @@
+@import 'vars';
+
+//=============================
+//  [Body]
+//=============================
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+}
+
+//=============================
+//  [Links]
+//=============================
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+a:hover {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    //  color: $color-navy-blue-100;
+  }
+}
+
+//=============================
+//  [Headers]
+//=============================
+
+// http://engageinteractive.co.uk/blog/em-vs-rem-vs-px
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: 'Canaro-SemiBold', sans-serif;
+  // margin: 0;
+  font-weight: 100;
+  width: 100%;
+  line-height: 1.1;
+  color: white;
+  transition: color 300ms ease;
+}
+
+h2 {
+  @include fontSizes(36px, 36px 36px, 48px);
+}
+
+h4 {
+  @include fontSizes(12px, 20px 20px, 26px);
+}
+
+h6 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+  @include fontSizes(12px, 12px 12px, 12px);
+}
+
+@media screen and (min-width: $screen-sm) {
+}
+
+@media screen and (min-width: $screen-md) {
+}
+
+@media screen and (min-width: $screen-lg) {
+}
+
+//=============================
+//  [Paragraph]
+//=============================
+p {
+  // font-family: 'Canaro-Bold', sans-serif;
+  font-size: inherit;
+  line-height: 1.4;
+  color: white;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: $screen-sm) {
+  p {
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  p {
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  p {
+  }
+}
+
+//=============================
+//  [Strong]
+//=============================
+strong {
+  // font-family: 'Canaro-SemiBold', sans-serif;
+  font-weight: 100;
+}
+
+@media screen and (min-width: $screen-sm) {
+  strong {
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  strong {
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  strong {
+  }
+}
+
+//=============================
+//  [Blockquote]
+//=============================
+blockquote {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: $screen-sm) {
+  blockquote {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  blockquote {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  blockquote {
+    font-size: 20px;
+  }
+}
+
+//=============================
+//  [Lists]
+//=============================
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  //background-image: url('/assets/images/svg/list-marker.svg');
+  background-repeat: no-repeat;
+  background-position: left 6px;
+  padding-left: 36px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: $screen-sm) {
+  .list li {
+    background-position: left 3px;
+    font-size: 14px;
+  }
+}
+
+//=============================
+//  [Menu]
+//=============================
+
+menu {
+  font-size: 24px;
+  text-transform: uppercase;
+  //font-family: 'Canaro-Bold';
+  text-align: left;
+  // color: $white;
+}
+
+//=============================
+//  [Decor]
+//=============================
+
+.decor {
+  font-size: 14px !important;
+}

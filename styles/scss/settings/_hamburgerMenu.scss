@@ -1,0 +1,116 @@
+/*
+*  ============================
+*    [HamburgerMenu]
+*  ============================
+*/
+
+$size: 60px;
+$height: 20px;
+$width: 30px;
+$line-size: 3px;
+$line-color: #47c9af;
+$line-radius: $line-size;
+$to-translate: ($height - $line-size) / 2;
+$bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
+
+
+.menu {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-image: url('shape.svg');
+  background-size: cover;
+  cursor: pointer;
+  // margin: 50px auto;
+  overflow: hidden;
+
+  &__icon {
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__line {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    //  background-color: $line-color;
+    // height: $line-size;
+    width: 30px;
+    height: 5px;
+    //border-radius: $line-radius;
+    pointer-events: none;
+    &--1 {
+      top: 0;
+    }
+    &--2 {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &--3 {
+      bottom: 0;
+    }
+  }
+  /*--- Close Button 2 ---*/
+
+  &--close2 &__line--1 {
+    transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
+  }
+  &--close2 &__line--1:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    //height: 4px;
+    //background-color: black;
+    //background-image: url(/src/assets/images/png/path4.png);
+    border-radius: $line-radius;
+    transition: transform 0.1s ease-in-out 0.2s;
+    z-index: 10;
+    // background-color: black;
+  }
+
+  &--close2 &__line--2 {
+    transition: opacity 0s ease-in-out 0.3s;
+  }
+  &--close2 &__line--3 {
+    transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
+  }
+  // Open
+  &--close2.open &__line--1 {
+    top: $to-translate;
+    transform: rotate(135deg);
+    transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
+  }
+  &--close2.open &__line--1:before {
+    display: flex;
+    background-size: contain;
+    background-image: url('../../assets/images/png/path4.png');
+    height: 30px;
+    width: 30px;
+    top: -13px;
+    transform: rotate(226deg);
+    animation: display 2s;
+  }
+
+  @keyframes display {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  &--close2.open &__line--2 {
+    opacity: 0;
+    transition: opacity 0s ease-in-out 0.3s;
+  }
+  &--close2.open &__line--3 {
+    bottom: $to-translate;
+    opacity: 0;
+    transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
+  }
+}

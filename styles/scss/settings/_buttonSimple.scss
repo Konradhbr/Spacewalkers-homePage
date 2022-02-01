@@ -1,0 +1,18 @@
+/*
+*  ============================
+*    [ButtonSimple]
+*  ============================
+*/
+
+.button--simple {
+  width: max-content;
+  height: max-content;
+  &:hover {
+    ::v-deep svg {
+      path {
+        transition: all 200ms;
+        fill: $white;
+      }
+    }
+  }
+}

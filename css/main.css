@@ -1,0 +1,613 @@
+/*
+*  ============================
+*    [settings scss]
+*  ============================
+*/
+/*
+*  ============================
+*    [Fonts]
+*  ============================
+*/
+@font-face {
+  font-family: 'Anton-Regular';
+  src: url("~@/assets/fonts/Anton-Regular.woff2") format("woff2"), url("~@/assets/fonts/Anton-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media screen and (min-width: 1010px) {
+  .-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1010px) {
+  .-desktop {
+    display: flex;
+  }
+}
+
+.-mobile {
+  display: flex;
+}
+
+@media screen and (min-width: 1010px) {
+  .-mobile {
+    display: none;
+  }
+}
+
+.-n-p {
+  padding: 0;
+}
+
+.-n-m {
+  margin: 0;
+}
+
+.-offset {
+  margin-left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1010px) {
+  .-offset {
+    margin-left: -40px;
+    width: calc(1010px + 40px);
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .-offset {
+    margin-left: -60px;
+    width: calc(1210px + 60px);
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .-offset {
+    margin-left: -80px;
+    width: calc(1532px + 80px);
+  }
+}
+
+.-offset-right {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1010px) {
+  .-offset-right {
+    margin-right: -40px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .-offset-right {
+    margin-right: -60px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .-offset-right {
+    margin-right: -80px;
+  }
+}
+
+.-offset-left {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1010px) {
+  .-offset-left {
+    margin-left: -40px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .-offset-left {
+    margin-left: -60px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .-offset-left {
+    margin-left: -80px;
+  }
+}
+
+.-fullset {
+  margin-left: -80px;
+  width: calc(100% + 160px);
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 1010px) {
+  .-fullset {
+    margin-left: -40px;
+    width: calc(100% + 80px);
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .-fullset {
+    margin-left: -60px;
+    width: calc(100% + 120px);
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .-fullset {
+    margin-left: -80px;
+    width: calc(100% + 160px);
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.-scale-up {
+  transform: scale(1);
+}
+
+.-uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container::selection {
+  background: none;
+}
+
+@media screen and (min-width: 1010px) {
+  .container {
+    width: 970px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .container {
+    width: 1452px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (-webkit-device-pixel-ratio: 1.25) {
+  .container {
+    zoom: 0.9;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.decor {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1010px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  .decor {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  .decor {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .decor {
+    margin-bottom: 35px;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+  width: 100%;
+  line-height: 1.1;
+  color: white;
+  transition: color 300ms ease;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1010px) {
+  h2 {
+    font-size: 36px 36px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+h4 {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1010px) {
+  h4 {
+    font-size: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  h4 {
+    font-size: 26px;
+  }
+}
+
+h6 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1010px) {
+  h6 {
+    font-size: 12px 12px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  h6 {
+    font-size: 12px;
+  }
+}
+
+p {
+  font-size: inherit;
+  line-height: 1.4;
+  color: white;
+  opacity: 0.7;
+}
+
+strong {
+  font-weight: 100;
+}
+
+blockquote {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1010px) {
+  blockquote {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  blockquote {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  blockquote {
+    font-size: 20px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  background-repeat: no-repeat;
+  background-position: left 6px;
+  padding-left: 36px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1010px) {
+  .list li {
+    background-position: left 3px;
+    font-size: 14px;
+  }
+}
+
+menu {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.decor {
+  font-size: 14px !important;
+}
+
+.decor {
+  font-family: 'Anton-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  color: #ffe393;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 1010px) {
+  .decor {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1010px) and (min-width: 970px) {
+  .decor {
+    font-size: calc( 16px + 2 * ((100vw - 970px) / 950));
+  }
+}
+
+@media screen and (min-width: 1010px) and (min-width: 1920px) {
+  .decor {
+    font-size: 18px;
+  }
+}
+
+/*
+*  ============================
+*    [Button]
+*  ============================
+*/
+.button {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.button:hover span {
+  left: 65px;
+}
+
+.button span {
+  position: absolute;
+  left: 25px;
+  top: 11px;
+  color: #fff;
+  font-family: 'Anton-Regular', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+/*
+*  ============================
+*    [ButtonSimple]
+*  ============================
+*/
+.button--simple {
+  width: max-content;
+  height: max-content;
+}
+
+.button--simple:hover ::v-deep svg path {
+  transition: all 200ms;
+  fill: #fff;
+}
+
+/*
+*  ============================
+*    [HamburgerMenu]
+*  ============================
+*/
+.menu {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-image: url("shape.svg");
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  /*--- Close Button 2 ---*/
+}
+
+.menu__icon {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__line {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 5px;
+  pointer-events: none;
+}
+
+.menu__line--1 {
+  top: 0;
+}
+
+.menu__line--2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu__line--3 {
+  bottom: 0;
+}
+
+.menu--close2 .menu__line--1 {
+  transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
+}
+
+.menu--close2 .menu__line--1:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
+  transition: transform 0.1s ease-in-out 0.2s;
+  z-index: 10;
+}
+
+.menu--close2 .menu__line--2 {
+  transition: opacity 0s ease-in-out 0.3s;
+}
+
+.menu--close2 .menu__line--3 {
+  transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
+}
+
+.menu--close2.open .menu__line--1 {
+  top: 8.5px;
+  transform: rotate(135deg);
+  transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
+}
+
+.menu--close2.open .menu__line--1:before {
+  display: flex;
+  background-size: contain;
+  background-image: url("../../assets/images/png/path4.png");
+  height: 30px;
+  width: 30px;
+  top: -13px;
+  transform: rotate(226deg);
+  animation: display 2s;
+}
+
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu--close2.open .menu__line--2 {
+  opacity: 0;
+  transition: opacity 0s ease-in-out 0.3s;
+}
+
+.menu--close2.open .menu__line--3 {
+  bottom: 8.5px;
+  opacity: 0;
+  transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
+}
+
+/*
+*  ============================
+*    [sections scss]
+*  ============================
+*/
+/*
+*  ============================
+*    [navigation menu] 
+*  ============================
+*/
+nav .logo {
+  width: 276px;
+  height: 61px;
+}
+/*# sourceMappingURL=main.css.map */

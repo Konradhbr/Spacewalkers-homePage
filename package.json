@@ -1,0 +1,11 @@
+{
+  "name": "spacewalkers",
+  "version": "1.0.0",
+  "description": "Spacewalkers Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konrad && Reborn",
+  "license": "ISC"
+}

@@ -16,12 +16,14 @@ body {
 a {
   text-decoration: none;
   outline: 0;
+  font-family: 'Anton-Regular', sans-serif;
 }
 
 a:hover,
 a:active,
 a:focus {
   outline: 0;
+  color: $seledin;
 }
 
 a:hover {
@@ -31,7 +33,6 @@ a:hover {
   h4,
   h5,
   h6 {
-    //  color: $color-navy-blue-100;
   }
 }
 
@@ -46,13 +47,15 @@ h3,
 h4,
 h5,
 h6 {
-  // font-family: 'Canaro-SemiBold', sans-serif;
-  // margin: 0;
-  font-weight: 100;
+  font-family: 'Anton-Regular', sans-serif;
   width: 100%;
   line-height: 1.1;
   color: white;
   transition: color 300ms ease;
+}
+
+h1 {
+  @include fontSizes(65px, 75px 75px, 105px);
 }
 
 h2 {
@@ -60,7 +63,7 @@ h2 {
 }
 
 h4 {
-  @include fontSizes(12px, 20px 20px, 26px);
+  @include fontSizes(20px, 20px 20px, 26px);
 }
 
 h6 {
@@ -83,11 +86,11 @@ h6 {
 //  [Paragraph]
 //=============================
 p {
-  // font-family: 'Canaro-Bold', sans-serif;
+  font-family: 'OpenSans-Light', sans-serif;
   font-size: inherit;
-  line-height: 1.4;
+  line-height: 28px;
   color: white;
-  opacity: 0.7;
+  font-size: 20px;
 }
 
 @media screen and (min-width: $screen-sm) {

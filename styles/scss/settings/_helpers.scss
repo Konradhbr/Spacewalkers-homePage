@@ -122,3 +122,17 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.link {
+  color: $seledin;
+  font-size: 16px;
+  font-family: 'OpenSans-Light', sans-serif;
+  text-transform: none;
+}
+
+//gradient text
+.text--gradient {
+  background: radial-gradient(97.96% 67.96% at 35.39% 18.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

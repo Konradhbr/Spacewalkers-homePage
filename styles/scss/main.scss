@@ -3,15 +3,15 @@
 *    [settings scss]
 *  ============================
 */
+@import 'settings/colors';
+@import 'settings/vars';
 @import 'settings/fonts';
 @import 'settings/grid';
 @import 'settings/helpers';
 @import 'settings/layout';
 @import 'settings/spacings';
 @import 'settings/typography';
-@import 'settings/vars';
 @import 'settings/decor';
-@import 'settings/colors';
 @import 'settings/button';
 @import 'settings/buttonSimple';
 @import 'settings/hamburgerMenu';
@@ -22,3 +22,7 @@
 *  ============================
 */
 @import 'sections/nav';
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/games';
+@import 'sections/footer';

@@ -1,0 +1,84 @@
+/*
+*  ============================
+*    [footer] 
+*  ============================
+*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $paddingXS;
+  background: radial-gradient(84.79% 84.79% at 52.38% -10.86%, #0a4399 0.04%, #0c0f41 100%), #0e124d;
+
+  .sitemap {
+    margin-bottom: 50px;
+    &__links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      color: $white;
+      font-size: 35px;
+      text-transform: uppercase;
+      &:hover {
+        color: $seledin;
+      }
+    }
+  }
+
+  .keepInTouch {
+    margin-bottom: 50px;
+  }
+
+  .socials {
+    a {
+      margin-left: 0;
+    }
+
+    &__links {
+      margin-left: -5px;
+    }
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .copyright {
+    text-align: center;
+
+    p {
+      color: $blue;
+    }
+
+    span {
+      color: $white;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  h4 {
+    color: $blue;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

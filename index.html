@@ -4,16 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spacewalkers</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/scripts/scripts.js" />
+
+    <title>Spacewalkers</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="/assets/images/png/logo-spacewalkers.png" alt="logo" class="logo" />
+    <div class="home">
+      <header>
+        <nav class="container">
+          <div class="logo">
+            <img src="/assets/images/png/logo-spacewalkers.png" alt="logo" class="logo" />
+          </div>
+          <div class="menu menu--close">
+            <div class="menu__icon">
+              <div class="menu__line menu__line--1">
+                <img src="/assets/images/png/path1.png" alt="hamburgerMenu" />
+              </div>
+              <div class="menu__line menu__line--2">
+                <img src="/assets/images/png/path2.png" alt="hamburgerMenu" />
+              </div>
+              <div class="menu__line menu__line--3">
+                <img src="/assets/images/png/path3.png" alt="hamburgerMenu" />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section container">
+          <div class="hero-section__text">
+            <h1>games with an <span class="text--gradient">amazing storyline</span></h1>
+            <p>
+              Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac
+              turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.
+            </p>
+            <div class="button">
+              <span>invest in our games</span>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="">
+              <img src="/assets/images/svg/facebook.svg" alt="facebook" />
+            </a>
+            <a href="">
+              <img src="/assets/images/svg/twitter.svg" alt="twitter" />
+            </a>
+            <a href=""> <img src="/assets/images/svg/instagram.svg" alt="instagram" /> </a>
+          </div>
+        </section>
+        <div class="page-content">
+          <section class="about container">
+            <div class="about__text">
+              <span class="decor">About Us</span>
+              <h2>Making games for fun and profit!</h2>
+              <p>
+                Spacewalkers is a group of experienced developers working on their debut game inspired by the world
+                created by Polish sci-fi best selling author, Przemysław Karda.
+              </p>
+              <p>
+                We have decades of experience shared among our team, gained over many projects in well established
+                studios. After creating multitude of games both with publishers and while independent, we decided to
+                pool our resources, know-how and passion to create a gamedev studio that will achieve even more.
+              </p>
+              <div class="button">
+                <span>check our blog</span>
+              </div>
+            </div>
+            <div class="about__image"></div>
+          </section>
+
+          <section class="games container">
+            <div class="games__text">
+              <h2>our games</h2>
+              <p>
+                We are determined to deliver innovative and meaningful gameplay to players both on PC and consoles. Our
+                goal is to develop premium AA quality games while maintaining the freedom to create unconventional
+                experiences.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer container">
+        <div class="sitemap">
+          <h4>Site map</h4>
+          <div class="sitemap__links">
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our games</a></li>
+              <li><a href="">our team</a></li>
+              <li><a href="">blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="">start</a></li>
+              <li><a href="">investing</a></li>
+              <li><a href="">career</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__outer">
+          <div class="keepInTouch">
+            <h4>Keep in touch</h4>
+            <p>
+              Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac
+              turpis velit, rhoncus eu, luctus et interd.
+            </p>
+            <div class="button">
+              <span>keep in touch</span>
+            </div>
+          </div>
+          <div class="footer__wrapper">
+            <div class="location">
+              <h4>Office location</h4>
+              <p>
+                Spacewalkers Studios <br />
+                ul. Zabłocie 25/10, <br />
+                30-701 Kraków, Poland
+              </p>
+              <a href="" class="link">hello@spacewalkers.games</a><
+            </div>
+            <div class="socials">
+              <h4>Follow Us</h4>
+              <div class="socials__links">
+                <a href="">
+                  <img src="/assets/images/svg/facebook.svg" alt="facebook" />
+                </a>
+                <a href="">
+                  <img src="/assets/images/svg/twitter.svg" alt="twitter" />
+                </a>
+                <a href=""> <img src="/assets/images/svg/instagram.svg" alt="instagram" /> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner">
+          <div class="logo">
+            <img src="/assets/images/png/logo-spacewalkers.png" alt="spacewalkers-logo" class="logo" />
+          </div>
+          <div class="copyright">
+            <p>© 2022 Spacewalkers Studios. All Rights Reserved.</p>
+            <p>Code & Design: <span>REBORN</span></p>
+          </div>
+        </div>
+      </footer>
+      <div class="logos container">
+        <p>Project co-financed by the European Union</p>
+        <div class="logos__items">
+          <img src="/assets/images/png/logo1.png" alt="European logo" />
+          <img src="/assets/images/png/logo2.png" alt="European logo" />
+          <img src="/assets/images/png/logo4.png" alt="European logo" />
+        </div>
       </div>
-      <div class="menu"></div>
-    </nav>
+    </div>
   </body>
 </html>

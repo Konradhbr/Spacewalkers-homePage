@@ -5,8 +5,33 @@
 */
 
 nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $navbar-height-xs;
+  min-width: -webkit-fill-available;
+  //width: auto;
+  padding-top: 0 !important;
+}
+
+.logo {
+  width: 276px;
+  height: 61px;
+}
+
+@media screen and (max-width: 414px) {
   .logo {
-    width: 276px;
-    height: 61px;
+    width: auto;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .logo {
+    width: auto;
+    height: 45px;
   }
 }

@@ -1,11 +1,74 @@
 /*
 *  ============================
-*    [navigation menu] 
+*    [games section] 
 *  ============================
 */
 
 .games {
   &__text {
     text-align: center;
+    margin-bottom: 50px;
   }
+
+  .game {
+    &-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      position: relative;
+      margin-bottom: 60px;
+      &__image {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        img {
+          max-width: 100%;
+          width: 260px;
+          height: auto;
+        }
+      }
+
+      &__text {
+        top: 25%;
+        position: absolute;
+        z-index: 2;
+        max-width: 242px;
+      }
+      .decor {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // .carousel {
+  //   display: flex;
+  //   flex-direction: column;
+  //   background: #eee;
+  //   transform: rotate(90deg);
+
+  //   &-cell {
+  //     width: 28%;
+  //     height: 200px;
+  //     margin-right: 10px;
+  //     background: #8c8;
+  //     border-radius: 5px;
+  //     counter-increment: carousel-cell;
+
+  //     &::before {
+  //       display: block;
+  //       text-align: center;
+  //       content: counter(carousel-cell);
+  //       line-height: 200px;
+  //       font-size: 80px;
+  //       color: white;
+  //     }
+
+  //     &.is-selected {
+  //       background: #ed2;
+  //     }
+  //   }
+  // }
 }

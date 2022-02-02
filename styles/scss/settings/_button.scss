@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: all 200ms;
-
+  cursor: pointer;
   &:hover {
     transition: all 200ms;
     background-image: url('/assets/images/svg/shape-arrow.svg');

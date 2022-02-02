@@ -10,3 +10,28 @@ $(document).ready(function () {
     // },
   );
 });
+
+//flickity carousel
+// $(document).ready(function (e) {
+//   $('.carousel').flickity({
+//     contain: true,
+//   });
+
+//   //=============================
+//   //  [Hero-carrousel (Top]
+//   //=============================
+//   var $carousel = $('.main-carousel').flickity();
+
+//   $('.button-group').on('click', '.button-carrousel', function () {
+//     var index = $(this).index();
+//     $carousel.flickity('select', index);
+//   });
+
+//   $('.previous-button').on('click', () => {
+//     $carousel.flickity('previous');
+//   });
+
+//   $('.next-button').on('click', () => {
+//     $carousel.flickity('next');
+//   });
+// });

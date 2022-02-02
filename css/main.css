@@ -301,6 +301,8 @@ h6 {
   line-height: 1.1;
   color: white;
   transition: color 300ms ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -320,18 +322,18 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 50px;
 }
 
 @media screen and (min-width: 1010px) {
   h2 {
-    font-size: 36px 36px;
+    font-size: 55px 75px;
   }
 }
 
 @media screen and (min-width: 1210px) {
   h2 {
-    font-size: 48px;
+    font-size: 75px;
   }
 }
 
@@ -440,10 +442,6 @@ menu {
 }
 
 .decor {
-  font-size: 14px !important;
-}
-
-.decor {
   font-family: 'Anton-Regular', sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -453,7 +451,7 @@ menu {
   position: relative;
   color: #61e7ff;
   line-height: 17px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 @media screen and (min-width: 1010px) {
@@ -487,6 +485,7 @@ menu {
   background-position: center;
   background-repeat: no-repeat;
   transition: all 200ms;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -519,14 +518,19 @@ menu {
 *    [ButtonSimple]
 *  ============================
 */
-.button--simple {
-  width: max-content;
-  height: max-content;
+.buttonSimple {
+  width: 50px;
+  height: 50px;
+  background-image: url("/assets/images/svg/shape-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 200ms;
 }
 
-.button--simple:hover ::v-deep svg path {
+.buttonSimple:hover {
   transition: all 200ms;
-  fill: #fff;
+  background-image: url("/assets/images/svg/shape-arrow--hover.svg");
 }
 
 /*
@@ -729,11 +733,46 @@ nav {
 
 /*
 *  ============================
-*    [navigation menu] 
+*    [games section] 
 *  ============================
 */
 .games__text {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.games .game-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.games .game__item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.games .game__item__image {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.games .game__item__image img {
+  max-width: 100%;
+  width: 260px;
+  height: auto;
+}
+
+.games .game__item__text {
+  top: 25%;
+  position: absolute;
+  z-index: 2;
+  max-width: 242px;
+}
+
+.games .game__item .decor {
+  font-size: 20px;
 }
 
 /*

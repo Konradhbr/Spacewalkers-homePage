@@ -5,12 +5,19 @@
 */
 
 .games {
+  width: auto;
+  min-height: 1000px;
+
   &__text {
     text-align: center;
     margin-bottom: 50px;
   }
 
   .game {
+    &__items {
+      // height: 930px;
+      // overflow-y: scroll;
+    }
     &-logo {
       width: 200px;
       height: auto;
@@ -26,7 +33,7 @@
         justify-content: flex-end;
         img {
           max-width: 100%;
-          width: 260px;
+          width: 78%;
           height: auto;
         }
       }
@@ -36,9 +43,6 @@
         position: absolute;
         z-index: 2;
         max-width: 242px;
-      }
-      .decor {
-        font-size: 20px;
       }
     }
   }
@@ -71,4 +75,18 @@
   //     }
   //   }
   // }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .games {
+    .game {
+      &__item {
+        &__image {
+          img {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
 }

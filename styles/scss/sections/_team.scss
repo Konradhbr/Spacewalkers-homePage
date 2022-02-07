@@ -5,9 +5,12 @@
 */
 
 .team {
+  width: auto;
+  min-height: 1000px;
+  margin-bottom: -150px;
+
   &__text {
-    text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   &-logo {
     width: 200px;
@@ -15,28 +18,106 @@
     margin-bottom: 20px;
   }
 
+  &__items {
+    max-height: 1500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   &__item {
-    position: relative;
-    margin-bottom: 60px;
+    cursor: pointer;
+
+    &__title {
+      position: relative;
+      top: 25px;
+      font-family: 'Anton-Regular', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 115px;
+      line-height: 100px;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+      -webkit-text-fill-color: transparent;
+    }
+
     &__image {
       position: relative;
       display: flex;
       justify-content: flex-end;
+      z-index: 2;
       img {
         max-width: 100%;
-        width: 260px;
+        width: 65%;
         height: auto;
       }
     }
 
     &__text {
-      top: 25%;
-      position: absolute;
-      z-index: 2;
-      max-width: 242px;
+      position: relative;
+      z-index: 5;
+      max-width: 285px;
+      margin-top: -50px;
+
+      h3 {
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 16px;
+        opacity: 0.7;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // display: -webkit-box;
+        // line-height: 16px; /* fallback */
+        // max-height: 32px; /* fallback */
+        // -webkit-line-clamp: 2; /* number of lines to show */
+        // -webkit-box-orient: vertical;
+      }
     }
+
+    &:hover {
+      .team__item__title {
+        background: radial-gradient(97.96% 67.96% at 35.39% 18.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .team__item__text {
+        p {
+          opacity: 1;
+        }
+      }
+      .decor {
+        animation: shake-animation 4.72s ease infinite;
+        transform-origin: 50% 50%;
+      }
+    }
+
     .decor {
-      font-size: 20px;
+      color: $purple;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xs) {
+  .team__item {
+    margin-bottom: 50px;
+    &__image {
+      img {
+        width: 50%;
+      }
+    }
+    &__text {
+      margin-top: -90px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .team__item {
+    &__title {
+      font-size: 125px;
+    }
+    &__text {
+      margin-top: -120px;
     }
   }
 }

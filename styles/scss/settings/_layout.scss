@@ -7,7 +7,7 @@ html {
   //font-family: 'Karla', sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
-  background: black;
+  // background: black;
   overflow-x: hidden;
 }
 
@@ -16,13 +16,18 @@ html {
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 2;
+  background: transparent;
 }
 
 .container {
-  padding: $p-lg 5%;
+  padding: 70px 5%;
 }
 
 .page-content {
+  //position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   height: auto;
   //background-image: url('/assets/images/jpg/page-background.jpg');
@@ -30,6 +35,18 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   //position: fixed;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url('/assets/images/jpg/page-background.jpg');
+  background-position: center center;
+  background-size: auto;
+  width: 100vh;
+  height: 100vh;
 }
 
 .logos {

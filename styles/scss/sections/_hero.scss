@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: flex-end;
   width: auto;
-  height: 100vh;
-  min-height: 1000px;
+  //height: 100vh;
+  min-height: 900px;
   background-image: url('/assets/images/jpg/hero-image.jpg');
   background-position: center;
   background-size: cover;
@@ -30,5 +30,39 @@
   //margin-bottom: $content-margin-bottom;
   a {
     margin: 0 15px;
+  }
+}
+
+@media screen and (min-width: $screen-xs) {
+  .hero-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    &__text {
+      width: 80%;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .hero-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    &__text {
+      width: 70%;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }

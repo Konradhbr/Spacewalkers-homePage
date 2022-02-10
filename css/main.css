@@ -701,6 +701,15 @@ menu {
   transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
 }
 
+@media screen and (min-width: 1010px) {
+  .menu {
+    background-image: none;
+  }
+  .menu__line img {
+    filter: invert(1);
+  }
+}
+
 /*
 *  ============================
 *    [sections scss]
@@ -799,6 +808,21 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  .hero-section.container {
+    padding: 40px 0px 40px 5%;
+  }
+  .hero-section__text {
+    width: 40%;
+  }
+  .socials {
+    flex-direction: column;
+  }
+  .socials a {
+    margin: 5px 0;
   }
 }
 

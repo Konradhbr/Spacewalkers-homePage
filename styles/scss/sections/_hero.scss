@@ -66,3 +66,26 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: $screen-sm) {
+  .hero-section {
+    // position: relative;
+    // justify-content: center;
+
+    &.container {
+      padding: 40px 0px 40px 5%;
+    }
+
+    &__text {
+      width: 40%;
+    }
+  }
+
+  .socials {
+    flex-direction: column;
+
+    a {
+      margin: 5px 0;
+    }
+  }
+}

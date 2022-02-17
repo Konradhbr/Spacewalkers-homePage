@@ -17,3 +17,39 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-sm) {
+  .about {
+    min-height: 700px;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: auto;
+    &__text {
+      width: 40%;
+    }
+    &__image {
+      width: 50%;
+      //max-width: 750px;
+    }
+  }
+}
+@media screen and (min-width: $screen-md) {
+  .about {
+    &.container {
+      padding: 70px 15% 70px 0;
+    }
+    &__text {
+      width: 42%;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .about {
+    &__text {
+      width: 40%;
+    }
+  }
+}

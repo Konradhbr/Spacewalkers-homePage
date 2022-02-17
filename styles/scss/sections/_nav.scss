@@ -4,7 +4,7 @@
 *  ============================
 */
 
-nav {
+.nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,13 +13,33 @@ nav {
   justify-content: space-between;
   height: $navbar-height-xs;
   min-width: -webkit-fill-available;
-  //width: auto;
+  z-index: 900;
   padding-top: 0 !important;
+
+  border-bottom: 1px solid $color-white-45;
+
+  &.container {
+    padding: 0 5%;
+  }
+
+  &.nav--active {
+    // background-image: url('/assets/images/jpg/hero-image-blur.jpg');
+    // background-size: auto;
+    // background-repeat: no-repeat;
+    // background-position: 82% 75%;
+    background-color: rgba(5, 9, 71, 255);
+  }
+
+  &.nav--scrolling {
+    position: fixed;
+    background-color: rgba(5, 9, 71, 255);
+  }
 }
 
 .logo {
   width: 276px;
   height: 61px;
+  z-index: 10;
 }
 
 @media screen and (max-width: 414px) {
@@ -33,5 +53,13 @@ nav {
   .logo {
     width: auto;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .nav {
+    &.container {
+      padding: 0 5%;
+    }
   }
 }

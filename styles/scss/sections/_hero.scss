@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: flex-end;
   width: auto;
-  //height: 100vh;
   min-height: 900px;
   background-image: url('/assets/images/jpg/hero-image.jpg');
   background-position: center;
@@ -19,15 +18,12 @@
 
   &__text {
     h1 {
-      text-transform: uppercase;
       letter-spacing: 2px;
-      line-height: 75px;
     }
   }
 }
 
 .socials {
-  //margin-bottom: $content-margin-bottom;
   a {
     margin: 0 15px;
   }
@@ -36,7 +32,7 @@
 @media screen and (min-width: $screen-xs) {
   .hero-section {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     &__text {
       width: 80%;
@@ -64,28 +60,61 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: absolute;
+    bottom: 5%;
   }
 }
 
 @media screen and (min-width: $screen-sm) {
   .hero-section {
-    // position: relative;
-    // justify-content: center;
+    height: calc(100vh - 145px);
+    min-height: 600px;
+    width: auto;
+    justify-content: center;
 
     &.container {
-      padding: 40px 0px 40px 5%;
+      padding: 105px 0px 40px 5%;
     }
 
     &__text {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 40%;
+      // max-width: 570px;
     }
+
+    // .socials {
+    //   position: absolute;
+    //   bottom: 5%;
+    // }
   }
+}
 
-  .socials {
-    flex-direction: column;
+@media screen and (min-width: $screen-md) {
+  .hero-section {
+    justify-content: center;
+    &.container {
+      padding: 105px 0px 40px 15%;
+    }
 
-    a {
-      margin: 5px 0;
+    &__text {
+      width: 35%;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: max-content;
+      margin-left: -10%;
+
+      a {
+        margin-bottom: 10px;
+        margin-left: 0;
+      }
     }
   }
 }

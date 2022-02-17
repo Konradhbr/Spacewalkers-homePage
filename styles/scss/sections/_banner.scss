@@ -11,28 +11,39 @@
   padding: 0 5%;
   z-index: 3;
 
-  &::before {
-    position: absolute;
-    content: '';
-    background-image: url('/assets/images/png/phone.png');
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: 81% 62%;
-    background-size: 112%;
-    width: 100%;
-    height: 100%;
-    transform: scaleX(-1);
-    z-index: 1;
-  }
-
   &__top {
     z-index: 3;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 510px;
+    position: relative;
+    p {
+      z-index: 3;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('/assets/images/png/phone.png');
+      left: -10%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      top: -63px;
+      width: 134%;
+      height: 100%;
+      transform: scaleX(-1);
+      z-index: 1;
+    }
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //  justify-content: space-between;
     background-image: url('/assets/images/png/banner-background.png');
     background-position: center;
     background-size: cover;
@@ -43,8 +54,10 @@
 
 @media screen and (min-width: $screen-xs) {
   .banner {
-    &::before {
-      background-size: 100%;
+    &__bottom {
+      &::before {
+        width: 120%;
+      }
     }
   }
 }
@@ -54,10 +67,95 @@
     &__top {
       width: 70%;
     }
-    &::before {
-      left: auto;
-      background-size: 85%;
-      background-position: 82% 70%;
+    &__bottom {
+      &::before {
+        left: auto;
+        background-size: 85%;
+        height: 112%;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .banner {
+    padding-top: 70px;
+    &__wrapper {
+      width: auto;
+      min-height: auto;
+      flex-direction: row;
+    }
+
+    &__top {
+      width: 40%;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: flex-end;
+      width: 55%;
+      height: auto;
+
+      &::before {
+        background-position: top center;
+        background-size: 103%;
+        top: -28%;
+      }
+    }
+  }
+}
+@media screen and (min-width: $screen-md) {
+  .banner {
+    &__bottom {
+      &::before {
+        background-position: top center;
+        background-size: 104%;
+        width: 116%;
+        height: 116%;
+        top: -23%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .banner {
+    padding: 0 15%;
+
+    &__top {
+      width: 54%;
+    }
+    &__bottom {
+      width: 46%;
+      &::before {
+        background-position: top center;
+        background-size: 100%;
+        width: 157%;
+        height: 148%;
+        max-width: 750px;
+        top: -18%;
+        left: -43%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xl) {
+  .banner {
+    &__wrapper {
+      min-height: 400px;
+    }
+
+    &__bottom {
+      &::before {
+        background-size: 104%;
+        width: 139%;
+        height: 146%;
+        max-width: 750px;
+        top: -27%;
+        left: -22%;
+      }
     }
   }
 }

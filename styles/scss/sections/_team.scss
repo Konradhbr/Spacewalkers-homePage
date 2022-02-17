@@ -48,6 +48,7 @@
         max-width: 100%;
         width: 65%;
         height: auto;
+        opacity: 1;
       }
     }
 
@@ -63,7 +64,7 @@
 
       p {
         font-size: 16px;
-        opacity: 0.7;
+        opacity: 1;
         // overflow: hidden;
         // text-overflow: ellipsis;
         // display: -webkit-box;
@@ -76,18 +77,16 @@
 
     &:hover {
       .team__item__title {
-        background: radial-gradient(97.96% 67.96% at 35.39% 18.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+        background: radial-gradient(96.96% 142.96% at 49.39% 26.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .team__item__text {
-        p {
-          opacity: 1;
-        }
-      }
+
       .decor {
         animation: shake-animation 4.72s ease infinite;
         transform-origin: 50% 50%;
+        color: #61e7ff;
       }
     }
 
@@ -118,6 +117,87 @@
     }
     &__text {
       margin-top: -120px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .team {
+    margin-bottom: -200px;
+    min-height: 700px;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      &__wrapper {
+        width: 50%;
+      }
+    }
+
+    &__items {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+      justify-items: center;
+      overflow: hidden;
+    }
+
+    &__item {
+      width: 90%;
+      &__title {
+        font-size: 80px;
+      }
+
+      &__image {
+        img {
+          width: 55%;
+        }
+      }
+
+      &__text {
+        margin-top: -95px;
+        h3 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .team {
+    &__items {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+    &__item {
+      &__title {
+        font-size: 90px;
+      }
+      &__text {
+        margin-top: -60px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .team {
+    margin-bottom: -100px;
+
+    &__items {
+      grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
+    }
+
+    .decor {
+      margin-bottom: 20px;
     }
   }
 }

@@ -14,101 +14,190 @@ $to-translate: ($height - $line-size) / 2;
 $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
 
 .menu {
-  position: relative;
-  height: 60px;
-  width: 60px;
-  background-image: url('/assets/images/svg/shape.svg');
-  background-size: cover;
-  cursor: pointer;
-  overflow: hidden;
-
-  &__icon {
-    position: absolute;
-    width: $width;
-    height: $height;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__line {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 5px;
-    pointer-events: none;
-    &--1 {
-      top: 0;
-    }
-    &--2 {
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    &--3 {
-      bottom: 0;
-    }
-  }
-  /*--- Close Button 2 ---*/
-
-  &--close2 &__line--1 {
-    transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
-  }
-  &--close2 &__line--1:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    border-radius: $line-radius;
-    transition: transform 0.1s ease-in-out 0.2s;
+  &__button {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-image: url('/assets/images/svg/shape.svg');
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
     z-index: 10;
-  }
 
-  &--close2 &__line--2 {
-    transition: opacity 0s ease-in-out 0.3s;
-  }
-  &--close2 &__line--3 {
-    transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
-  }
-  // Open
-  &--close2.open &__line--1 {
-    top: $to-translate;
-    transform: rotate(135deg);
-    transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
-  }
-  &--close2.open &__line--1:before {
-    display: flex;
-    background-size: contain;
-    background-image: url('../../assets/images/png/path4.png');
-    height: 30px;
-    width: 30px;
-    top: -13px;
-    transform: rotate(226deg);
-    animation: display 2s;
-  }
+    &__icon {
+      position: absolute;
+      width: $width;
+      height: $height;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__line {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 5px;
+      pointer-events: none;
+      &--1 {
+        top: 0;
+      }
+      &--2 {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &--3 {
+        bottom: 0;
+      }
+    }
+    /*--- Close Button 2 ---*/
 
-  @keyframes display {
-    from {
+    &--close2 &__line--1 {
+      transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
+    }
+    &--close2 &__line--1:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-radius: $line-radius;
+      transition: transform 0.1s ease-in-out 0.2s;
+      z-index: 10;
+    }
+
+    &--close2 &__line--2 {
+      transition: opacity 0s ease-in-out 0.3s;
+    }
+    &--close2 &__line--3 {
+      transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
+    }
+    // Open
+    &--close2.open &__line--1 {
+      top: $to-translate;
+      transform: rotate(135deg);
+      transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
+    }
+    &--close2.open &__line--1:before {
+      display: flex;
+      background-size: contain;
+      background-image: url('../../assets/images/png/path4.png');
+      height: 30px;
+      width: 30px;
+      top: -13px;
+      transform: rotate(226deg);
+      animation: display 2s;
+    }
+
+    @keyframes display {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    &--close2.open &__line--2 {
       opacity: 0;
+      transition: opacity 0s ease-in-out 0.3s;
     }
-    to {
-      opacity: 1;
+    &--close2.open &__line--3 {
+      bottom: $to-translate;
+      opacity: 0;
+      transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
     }
   }
-  &--close2.open &__line--2 {
-    opacity: 0;
-    transition: opacity 0s ease-in-out 0.3s;
-  }
-  &--close2.open &__line--3 {
-    bottom: $to-translate;
-    opacity: 0;
-    transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
+
+  &__mobile {
+    width: 100%;
+    /* min-height: 100vh; */
+    position: fixed;
+    right: -100%;
+    height: 100%;
+    top: 0;
+    transition: all 1s;
+    overflow-y: scroll;
+    z-index: 10;
+    background-color: rgba(5, 9, 71, 255);
+
+    &__wrapper {
+      background-image: url('/assets/images/jpg/hero-image-blur.jpg');
+      background-size: auto;
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: center 80%;
+      min-height: calc(100vh - 105px);
+      top: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      &.container {
+        padding: 130px 5% 30px 5%;
+      }
+    }
+
+    &--active {
+      right: 0;
+      transition: all 1s;
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 70px;
+      padding-bottom: 30px;
+
+      h4 {
+        color: $blue;
+      }
+    }
+
+    &__links {
+      padding-top: 50px;
+      li {
+        text-align: center;
+      }
+
+      a {
+        color: $white;
+        font-size: 35px;
+        text-transform: uppercase;
+        &:hover {
+          color: $seledin;
+        }
+      }
+    }
+
+    .logos {
+      z-index: 10;
+      text-align: left;
+    }
   }
 }
 
 @media screen and (min-width: $screen-sm) {
-  .menu {
+  .menu__button {
+    // display: flex;
+    // justify-content: flex-end;
+    //width: 100%;
     background-image: none;
+    //width: auto;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__text {
+      h4 {
+        font-size: 20px;
+        margin-bottom: 0 !important;
+        //position: relative;
+        //left: -65px;
+        //text-transform: uppercase;
+      }
+    }
 
     &__line {
       img {

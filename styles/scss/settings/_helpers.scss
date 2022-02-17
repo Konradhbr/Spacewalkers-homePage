@@ -7,18 +7,18 @@
 }
 
 .-desktop {
-  display: none;
+  display: none !important;
 
   @media screen and (min-width: $screen-sm) {
-    display: flex;
+    display: flex !important;
   }
 }
 
 .-mobile {
-  display: flex;
+  display: flex !important;
 
   @media screen and (min-width: $screen-sm) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -132,7 +132,8 @@
 
 //gradient text
 .text--gradient {
-  background: radial-gradient(97.96% 67.96% at 35.39% 18.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+  background: radial-gradient(96.96% 142.96% at 49.39% 26.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
+  //background: radial-gradient(97.96% 67.96% at 35.39% 18.08%, #61e7ff 0%, #858bff 46.27%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

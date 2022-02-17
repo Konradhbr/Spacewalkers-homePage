@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="scripts/index.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
 
@@ -16,40 +20,78 @@
     <title>Spacewalkers</title>
   </head>
   <body>
-    <div class="background"></div>
+    <!-- <div class="background"></div> -->
     <div class="home">
       <header>
-        <nav class="container">
+        <nav class="container nav" id="scrollNavbar">
           <div class="logo">
             <img src="/assets/images/png/logo-spacewalkers.png" alt="logo" class="logo" />
           </div>
-          <div class="menu menu--close">
-            <div class="menu__icon -mobile">
-              <div class="menu__line menu__line--1">
+          <div class="menu__button menu--close">
+            <div class="menu__button__icon -mobile">
+              <div class="menu__button__line menu__line--1">
                 <img src="/assets/images/png/path1.png" alt="hamburgerMenu" />
               </div>
-              <div class="menu__line menu__line--2">
+              <div class="menu__button__line menu__button__line--2">
                 <img src="/assets/images/png/path2.png" alt="hamburgerMenu" />
               </div>
-              <div class="menu__line menu__line--3">
+              <div class="menu__button__line menu__button__line--3">
                 <img src="/assets/images/png/path3.png" alt="hamburgerMenu" />
               </div>
             </div>
-            <div class="menu__icon -desktop">
-              <div class="menu__line menu__line--1">
-                <img src="/assets/images/png/path1-white.png" alt="hamburgerMenu" />
-              </div>
-              <div class="menu__line menu__line--2">
-                <img src="/assets/images/png/path2-white.png" alt="hamburgerMenu" />
-              </div>
-              <div class="menu__line menu__line--3">
-                <img src="/assets/images/png/path3-white.png" alt="hamburgerMenu" />
+            <div class="menu__button__wrapper">
+              <!-- <h4 class="menu__text">menu</h4> -->
+              <div class="menu__button__icon -desktop">
+                <div class="menu__button__line menu__button__line--1">
+                  <img src="/assets/images/png/path1-white.png" alt="hamburgerMenu" />
+                </div>
+                <div class="menu__button__line menu__button__line--2">
+                  <img src="/assets/images/png/path2-white.png" alt="hamburgerMenu" />
+                </div>
+                <div class="menu__button__line menu__button__line--3">
+                  <img src="/assets/images/png/path3-white.png" alt="hamburgerMenu" />
+                </div>
               </div>
             </div>
           </div>
         </nav>
       </header>
       <main>
+        <div class="menu__mobile">
+          <div class="menu__mobile__wrapper">
+            <ul class="menu__mobile__links">
+              <li><a href="">about us</a></li>
+              <li><a href="">our games</a></li>
+              <li><a href="">out team</a></li>
+              <li><a href="">start investing</a></li>
+              <li><a href="">career</a></li>
+              <li><a href="">blog</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+            <div>
+              <div class="socials">
+                <h4>Follow Us</h4>
+                <div class="socials__links">
+                  <a href="">
+                    <img src="/assets/images/svg/facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="">
+                    <img src="/assets/images/svg/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href=""> <img src="/assets/images/svg/instagram.svg" alt="instagram" /> </a>
+                </div>
+              </div>
+              <div class="logos container">
+                <p>Project co-financed by the European Union</p>
+                <div class="logos__items">
+                  <img src="/assets/images/png/logo1.png" alt="European logo" />
+                  <img src="/assets/images/png/logo2.png" alt="European logo" />
+                  <img src="/assets/images/png/logo4.png" alt="European logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <section class="hero-section container">
           <div class="hero-section__text">
             <h1>games with an <span class="text--gradient">amazing storyline</span></h1>
@@ -75,7 +117,7 @@
           <section class="about container">
             <div class="about__text">
               <span class="decor">About Us</span>
-              <h2>Making games for fun and profit!</h2>
+              <h2>Making games <span class="text--gradient">for fun and</span> profit!</h2>
               <p>
                 Spacewalkers is a group of experienced developers working on their debut game inspired by the world
                 created by Polish sci-fi best selling author, Przemysław Karda.
@@ -103,7 +145,7 @@
                 experiences.
               </p>
             </div>
-            <div class="game__items">
+            <div class="game__items -mobile">
               <div class="game__item">
                 <div class="game__item__text">
                   <span class="decor">Interregnum Chronicles:</span>
@@ -135,27 +177,105 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="carousel" data-flickity='{ "groupCells": true , "groupCells": 2}'>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-              <div class="carousel-cell"></div>
-            </div> -->
+            <div
+              class="main-carousel game__items -desktop"
+              data-flickity='{"groupCells": true, "groupCells": 2, "pageDots": false , "prevNextButtons": false,}'
+            >
+              <div class="carousel-cell">
+                <div class="game__item">
+                  <div class="game__item__text">
+                    <span class="decor">Interregnum Chronicles:</span>
+                    <h2>signal</h2>
+                    <div class="buttonSimple"></div>
+                  </div>
+                  <div class="game__item__image">
+                    <img src="/assets/images/png/signal.png" alt="signal" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="game__item">
+                  <div class="game__item__text">
+                    <span class="decor">Interregnum Chronicles:</span>
+                    <h2>False Prophet</h2>
+                    <div class="buttonSimple"></div>
+                  </div>
+                  <div class="game__item__image">
+                    <img src="/assets/images/png/falseProphet.png" alt="False Prophet" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="game__item">
+                  <div class="game__item__text">
+                    <span class="decor">Interregnum Chronicles:</span>
+                    <h2>World Collapse</h2>
+                    <div class="buttonSimple"></div>
+                  </div>
+                  <div class="game__item__image">
+                    <img src="/assets/images/png/worldCollapse.png" alt="False Prophet" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="team container">
             <div class="team__text">
-              <span class="decor">Spacewalkers</span>
-              <h2>our team</h2>
-              <p>
-                We are determined to deliver innovative and meaningful gameplay to players both on PC and consoles. Our
-                goal is to develop premium AA quality games while maintaining the freedom to create unconventional
-                experiences.
-              </p>
+              <div class="team__text__wrapper">
+                <span class="decor">Spacewalkers</span>
+                <h2>our team</h2>
+              </div>
+              <div class="team__text__wrapper">
+                <p>
+                  We are determined to deliver innovative and meaningful gameplay to players both on PC and consoles.
+                  Our goal is to develop premium AA quality games while maintaining the freedom to create unconventional
+                  experiences.
+                </p>
+              </div>
             </div>
             <div class="team__items">
+              <div class="team__item">
+                <span class="team__item__title">Tomasz</span>
+                <div class="team__item__image">
+                  <img src="/assets/images/jpg/team/1.jpg" alt="team-member" />
+                </div>
+                <div class="team__item__text">
+                  <h3>Wacławek</h3>
+                  <span class="decor">CEO, Creative Director</span>
+                  <p>
+                    Passionate about creating immersive in-game solutions and PC hardware. In his spare time busy
+                    developing his own game projects and cooking.
+                  </p>
+                </div>
+              </div>
+              <div class="team__item">
+                <span class="team__item__title">Tomasz</span>
+                <div class="team__item__image">
+                  <img src="/assets/images/jpg/team/1.jpg" alt="team-member" />
+                </div>
+                <div class="team__item__text">
+                  <h3>Wacławek</h3>
+                  <span class="decor">CEO, Creative Director</span>
+                  <p>
+                    Passionate about creating immersive in-game solutions and PC hardware. In his spare time busy
+                    developing his own game projects and cooking.
+                  </p>
+                </div>
+              </div>
+              <div class="team__item">
+                <span class="team__item__title">Tomasz</span>
+                <div class="team__item__image">
+                  <img src="/assets/images/jpg/team/1.jpg" alt="team-member" />
+                </div>
+                <div class="team__item__text">
+                  <h3>Wacławek</h3>
+                  <span class="decor">CEO, Creative Director</span>
+                  <p>
+                    Passionate about creating immersive in-game solutions and PC hardware. In his spare time busy
+                    developing his own game projects and cooking.
+                  </p>
+                </div>
+              </div>
               <div class="team__item">
                 <span class="team__item__title">Tomasz</span>
                 <div class="team__item__image">
@@ -190,12 +310,15 @@
             <div class="banner__wrapper container">
               <div class="banner__top">
                 <span class="decor"> Invest in games </span>
-                <h2>games are a great <span class="text--gradient">investment potential</span></h2>
+                <h2>
+                  games are<br />
+                  a great <span class="text--gradient">investment potential</span>
+                </h2>
                 <div class="button">
                   <span>start investing</span>
                 </div>
               </div>
-              <div class="banner-bottom">
+              <div class="banner__bottom">
                 <p>
                   Invest in the development of Interregnum Chronicles games at Spacewalkers Studio are created with
                   community backing through the crowdfunding platform tecra.space
@@ -206,59 +329,61 @@
         </div>
       </main>
       <footer class="footer container">
-        <div class="sitemap">
-          <h4>Site map</h4>
-          <div class="sitemap__links">
-            <ul>
-              <li><a href="">about us</a></li>
-              <li><a href="">our games</a></li>
-              <li><a href="">our team</a></li>
-              <li><a href="">blog</a></li>
-            </ul>
-            <ul>
-              <li><a href="">start</a></li>
-              <li><a href="">investing</a></li>
-              <li><a href="">career</a></li>
-              <li><a href="">contact</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="footer__outer">
-          <div class="keepInTouch">
-            <h4>Keep in touch</h4>
-            <p>
-              Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac
-              turpis velit, rhoncus eu, luctus et interd.
-            </p>
-            <div class="button">
-              <span>keep in touch</span>
+          <div class="sitemap">
+            <h4>Site map</h4>
+            <div class="sitemap__links">
+              <ul>
+                <li><a href="">about us</a></li>
+                <li><a href="">our games</a></li>
+                <li><a href="">our team</a></li>
+                <li><a href="">blog</a></li>
+              </ul>
+              <ul>
+                <li><a href="">start</a></li>
+                <li><a href="">investing</a></li>
+                <li><a href="">career</a></li>
+                <li><a href="">contact</a></li>
+              </ul>
             </div>
           </div>
-          <div class="footer__wrapper">
-            <div class="location">
-              <h4>Office location</h4>
+          <div class="footer__inner">
+            <div class="keepInTouch">
+              <h4>Keep in touch</h4>
               <p>
-                Spacewalkers Studios <br />
-                ul. Zabłocie 25/10, <br />
-                30-701 Kraków, Poland
+                Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames
+                ac turpis velit, rhoncus eu, luctus et interd.
               </p>
-              <a href="" class="link">hello@spacewalkers.games</a><
+              <div class="button">
+                <span>keep in touch</span>
+              </div>
             </div>
-            <div class="socials">
-              <h4>Follow Us</h4>
-              <div class="socials__links">
-                <a href="">
-                  <img src="/assets/images/svg/facebook.svg" alt="facebook" />
-                </a>
-                <a href="">
-                  <img src="/assets/images/svg/twitter.svg" alt="twitter" />
-                </a>
-                <a href=""> <img src="/assets/images/svg/instagram.svg" alt="instagram" /> </a>
+            <div class="footer__wrapper">
+              <div class="location">
+                <h4>Office location</h4>
+                <p>
+                  Spacewalkers Studios <br />
+                  ul. Zabłocie 25/10, <br />
+                  30-701 Kraków, Poland
+                </p>
+                <a href="" class="link">hello@spacewalkers.games</a><
+              </div>
+              <div class="socials">
+                <h4>Follow Us</h4>
+                <div class="socials__links">
+                  <a href="">
+                    <img src="/assets/images/svg/facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="">
+                    <img src="/assets/images/svg/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href=""> <img src="/assets/images/svg/instagram.svg" alt="instagram" /> </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__inner">
+        <div class="footer__inner footer__inner--copyright">
           <div class="logo">
             <img src="/assets/images/png/logo-spacewalkers.png" alt="spacewalkers-logo" class="logo" />
           </div>

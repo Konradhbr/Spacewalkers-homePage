@@ -1,5 +1,23 @@
 $(document).ready(function () {
   //=============================
+  //  [Hero-carrousel]
+  //=============================
+  var $carousel = $('.main-carousel').flickity({
+    contain: true,
+    pageDots: false,
+    prevNextButtons: false,
+    groupCells: true,
+    groupCells: 2,
+    pageDots: false,
+    prevNextButtons: false,
+  });
+
+  $('.button-group').on('click', '.button-carrousel', function () {
+    var index = $(this).index();
+    $carousel.flickity('select', index);
+  });
+
+  //=============================
   //  [button animation]
   //=============================
   $('.button').mouseover(function () {
@@ -27,24 +45,6 @@ $(document).ready(function () {
   $(mobileMenuLink).click(function () {
     $(mobileMenu).removeClass('menu__mobile--active');
     $(nav).removeClass('nav--active');
-  });
-
-  //=============================
-  //  [Hero-carrousel]
-  //=============================
-  var $carousel = $('.main-carousel').flickity({
-    contain: true,
-    pageDots: false,
-    prevNextButtons: false,
-    groupCells: true,
-    groupCells: 2,
-    pageDots: false,
-    prevNextButtons: false,
-  });
-
-  $('.button-group').on('click', '.button-carrousel', function () {
-    var index = $(this).index();
-    $carousel.flickity('select', index);
   });
 
   //=============================

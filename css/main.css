@@ -231,8 +231,7 @@
 
 body,
 html {
-  width: 101%;
-  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -678,103 +677,90 @@ menu {
   position: relative;
   height: 60px;
   width: 60px;
-  background-image: url("/assets/images/svg/shape.svg");
+  background-image: url("/assets/images/svg/shape--white.svg");
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
   z-index: 10;
-  /*--- Close Button 2 ---*/
 }
 
-.menu__button__icon {
+.menu__button .hamburger-menu {
   position: absolute;
-  width: 30px;
-  height: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -4px;
+  right: 14px;
+  z-index: 20;
 }
 
-.menu__button__line {
-  display: flex;
-  justify-content: flex-end;
+.menu__button .hamburger-menu #menu__toggle {
+  opacity: 0;
+  width: 57.5px;
+  height: 58px;
   position: absolute;
+}
+
+.menu__button .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  width: 20px;
+  height: 4px;
+  position: relative;
+  top: -2px;
+}
+
+.menu__button .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  width: 35px;
+  height: 4px;
+}
+
+.menu__button .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 35px;
+  height: 4px;
+}
+
+.menu__button .hamburger-menu #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
   left: 0;
-  width: 30px;
-  height: 5px;
-  pointer-events: none;
+  top: 5px;
 }
 
-.menu__button__line--1 {
-  top: 0;
-}
-
-.menu__button__line--2 {
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.menu__button__line--3 {
-  bottom: 0;
-}
-
-.menu__button--close2 .menu__button__line--1 {
-  transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
-}
-
-.menu__button--close2 .menu__button__line--1:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  border-radius: 3px;
-  transition: transform 0.1s ease-in-out 0.2s;
-  z-index: 10;
-}
-
-.menu__button--close2 .menu__button__line--2 {
-  transition: opacity 0s ease-in-out 0.3s;
-}
-
-.menu__button--close2 .menu__button__line--3 {
-  transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
-}
-
-.menu__button--close2.open .menu__button__line--1 {
-  top: 8.5px;
-  transform: rotate(135deg);
-  transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
-}
-
-.menu__button--close2.open .menu__button__line--1:before {
+.menu__button .hamburger-menu .menu__btn {
   display: flex;
-  background-size: contain;
-  background-image: url("../../assets/images/png/path4.png");
-  height: 30px;
-  width: 30px;
-  top: -13px;
-  transform: rotate(226deg);
-  animation: display 2s;
+  align-items: center;
+  transform: rotate(180deg);
+  width: 46px;
+  height: 67px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-@keyframes display {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.menu__button .hamburger-menu .menu__btn > span,
+.menu__button .hamburger-menu .menu__btn > span::before,
+.menu__button .hamburger-menu .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  border-radius: 1.5px;
+  width: 31px;
+  height: 4px;
+  background-color: #000;
+  transition-duration: 0.25s;
 }
 
-.menu__button--close2.open .menu__button__line--2 {
-  opacity: 0;
-  transition: opacity 0s ease-in-out 0.3s;
+.menu__button .hamburger-menu .menu__btn > span {
+  width: 20px;
+  height: 4px;
 }
 
-.menu__button--close2.open .menu__button__line--3 {
-  bottom: 8.5px;
-  opacity: 0;
-  transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
+.menu__button .hamburger-menu .menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__button .hamburger-menu .menu__btn > span::after {
+  content: '';
+  top: 8px;
 }
 
 .menu__mobile {

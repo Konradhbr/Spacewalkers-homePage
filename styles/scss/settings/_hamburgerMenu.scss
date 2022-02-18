@@ -18,94 +18,105 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
     position: relative;
     height: 60px;
     width: 60px;
-    background-image: url('/assets/images/svg/shape.svg');
+    background-image: url('/assets/images/svg/shape--white.svg');
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
     z-index: 10;
 
-    &__icon {
+    .hamburger-menu {
       position: absolute;
-      width: $width;
-      height: $height;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &__line {
-      display: flex;
-      justify-content: flex-end;
-      position: absolute;
-      left: 0;
-      width: 30px;
-      height: 5px;
-      pointer-events: none;
-      &--1 {
-        top: 0;
-      }
-      &--2 {
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-      &--3 {
-        bottom: 0;
-      }
-    }
-    /*--- Close Button 2 ---*/
+      top: -4px;
+      right: 14px;
+      z-index: 20;
 
-    &--close2 &__line--1 {
-      transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
-    }
-    &--close2 &__line--1:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      border-radius: $line-radius;
-      transition: transform 0.1s ease-in-out 0.2s;
-      z-index: 10;
-    }
-
-    &--close2 &__line--2 {
-      transition: opacity 0s ease-in-out 0.3s;
-    }
-    &--close2 &__line--3 {
-      transition: oapcity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
-    }
-    // Open
-    &--close2.open &__line--1 {
-      top: $to-translate;
-      transform: rotate(135deg);
-      transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
-    }
-    &--close2.open &__line--1:before {
-      display: flex;
-      background-size: contain;
-      background-image: url('../../assets/images/png/path4.png');
-      height: 30px;
-      width: 30px;
-      top: -13px;
-      transform: rotate(226deg);
-      animation: display 2s;
-    }
-
-    @keyframes display {
-      from {
+      #menu__toggle {
         opacity: 0;
+        width: 57.5px;
+        height: 58px;
+        position: absolute;
       }
-      to {
-        opacity: 1;
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+        width: 20px;
+        height: 4px;
+        position: relative;
+        top: -2px;
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+        width: 35px;
+        height: 4px;
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        width: 35px;
+        height: 4px;
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+        top: 5px;
+      }
+
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        // position: fixed;
+        // top: 20px;
+        // left: 20px;
+        transform: rotate(180deg);
+        width: 46px;
+        height: 67px;
+
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        border-radius: 1.5px;
+        width: 31px;
+        height: 4px;
+
+        background-color: $black;
+
+        transition-duration: 0.25s;
+      }
+
+      .menu__btn > span {
+        width: 20px;
+        height: 4px;
+      }
+
+      //  .menu__btn > span{
+      // 	  width: 23px;
+      //   height: 5px;
+      //  }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
       }
     }
-    &--close2.open &__line--2 {
-      opacity: 0;
-      transition: opacity 0s ease-in-out 0.3s;
-    }
-    &--close2.open &__line--3 {
-      bottom: $to-translate;
-      opacity: 0;
-      transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
-    }
+
+    // &__icon {
+    //   position: absolute;
+    //   width: $width;
+    //   height: $height;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
   }
 
   &__mobile {

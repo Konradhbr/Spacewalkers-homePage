@@ -1256,7 +1256,7 @@ menu {
   }
   .carousel-cell {
     width: 38%;
-    height: 500px;
+    height: 400px;
     border-radius: 5px;
     padding: 0 50px;
   }
@@ -1268,7 +1268,7 @@ menu {
 
 @media screen and (min-width: 1210px) {
   .games {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .games.container {
     padding: 70px 0;
@@ -1279,21 +1279,28 @@ menu {
   .games .game__items {
     padding: 0 15%;
   }
+  .games .game__item__text h2 {
+    font-size: 55px;
+  }
+  .games .carousel-cell {
+    height: 450px;
+  }
 }
 
 @media screen and (min-width: 1532px) {
-  .games {
-    margin-bottom: 100px;
-  }
   .games .game__item__image img {
     width: 92%;
   }
   .games .game__item__text {
     left: -50px;
   }
-  .carousel-cell {
+  .games .game__item__text h2 {
+    font-size: 75px;
+  }
+  .games .carousel-cell {
     width: 35%;
     padding: 0 70px;
+    height: 600px;
   }
 }
 

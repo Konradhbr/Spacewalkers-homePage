@@ -5,7 +5,7 @@
 */
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -15,6 +15,7 @@
   min-width: -webkit-fill-available;
   z-index: 900;
   padding-top: 0 !important;
+  background-color: rgba(5, 9, 71, 0.65);
 
   border-bottom: 1px solid $color-white-45;
 
@@ -23,10 +24,6 @@
   }
 
   &.nav--active {
-    // background-image: url('/assets/images/jpg/hero-image-blur.jpg');
-    // background-size: auto;
-    // background-repeat: no-repeat;
-    // background-position: 82% 75%;
     background-color: rgba(5, 9, 71, 255);
   }
 

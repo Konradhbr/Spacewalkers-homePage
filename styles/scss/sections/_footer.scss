@@ -58,6 +58,11 @@
   .copyright {
     text-align: center;
 
+    a {
+      font-family: 'OpenSans-Light', sans-serif;
+      cursor: pointer;
+    }
+
     p {
       color: $blue;
     }
@@ -167,6 +172,10 @@
   .footer {
     &.container {
       padding: 270px 15% 70px 15%;
+    }
+
+    .keepInTouch {
+      width: 100%;
     }
   }
 }

@@ -35,6 +35,12 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-sm) and (max-width: 1150px) and (min-height: 1250px) {
+  .about {
+    height: calc(75vh - 80px);
+  }
+}
 @media screen and (min-width: $screen-md) {
   .about {
     &.container {
@@ -43,6 +49,10 @@
     &__text {
       width: 42%;
     }
+    &__image {
+      width: 50%;
+      max-width: 540px;
+    }
   }
 }
 
@@ -50,6 +60,26 @@
   .about {
     &__text {
       width: 40%;
+    }
+    &__image {
+      width: 50%;
+      max-width: 600px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xl) {
+  .about {
+    &__image {
+      max-width: 710px;
+    }
+  }
+}
+
+@media screen and (min-width: 2010px) {
+  .about {
+    &__image {
+      max-width: none;
     }
   }
 }

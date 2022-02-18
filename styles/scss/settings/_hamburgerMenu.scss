@@ -121,7 +121,6 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
 
   &__mobile {
     width: 100%;
-    /* min-height: 100vh; */
     position: fixed;
     right: -100%;
     height: 100%;
@@ -167,6 +166,7 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
       padding-top: 50px;
       li {
         text-align: center;
+        margin-bottom: 10px;
       }
 
       a {
@@ -187,32 +187,130 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
 }
 
 @media screen and (min-width: $screen-sm) {
-  .menu__button {
-    // display: flex;
-    // justify-content: flex-end;
-    //width: 100%;
-    background-image: none;
-    //width: auto;
-
-    &__wrapper {
+  .menu {
+    &__button {
       display: flex;
-      flex-direction: row;
+      justify-content: center;
       align-items: center;
-    }
+      width: 108px;
+      background-image: none;
+      //width: auto;
 
-    &__text {
+      &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
       h4 {
         font-size: 20px;
         margin-bottom: 0 !important;
-        //position: relative;
-        //left: -65px;
-        //text-transform: uppercase;
+      }
+
+      .hamburger-menu {
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          background-color: $white;
+        }
       }
     }
 
-    &__line {
-      img {
-        filter: invert(1);
+    &__mobile {
+      overflow-x: hidden;
+
+      &__links {
+        a {
+          font-size: 28px;
+        }
+      }
+
+      &__wrapper {
+        background-position: center 84%;
+      }
+
+      &__items {
+        width: 100%;
+      }
+
+      .socials {
+        display: flex;
+        padding-bottom: 160px;
+        flex-direction: column;
+      }
+
+      .logos {
+        p {
+          max-width: 280px;
+        }
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .menu {
+    &__mobile {
+      width: 33%;
+      .logos {
+        img {
+          width: 30%;
+        }
+        p {
+          line-height: normal;
+          max-width: 120px;
+          font-size: 11px;
+          margin-bottom: 0;
+        }
+        &__items {
+          width: 67%;
+        }
+      }
+
+      .socials {
+        padding-bottom: 120px;
+      }
+    }
+  }
+}
+@media screen and (min-width: $screen-lg) {
+  .menu {
+    &__mobile {
+      &__links {
+        a {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xl) {
+  .menu {
+    &__mobile {
+      .logos {
+        &__items {
+          width: 73%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .menu {
+    &__mobile {
+      width: 25%;
+      &__wrapper {
+        background-size: 562%;
+      }
+      .logos {
+        p {
+          font-size: 15px;
+        }
       }
     }
   }

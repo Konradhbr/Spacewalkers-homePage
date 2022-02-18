@@ -1256,6 +1256,7 @@ menu {
   }
   .carousel-cell {
     width: 38%;
+    min-width: 430px;
     height: max-content;
     border-radius: 5px;
     padding: 0 50px;

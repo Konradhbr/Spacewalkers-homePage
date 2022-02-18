@@ -1232,7 +1232,7 @@ menu {
 }
 
 .games.container {
-  padding: 70px 0;
+  padding: 70px 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1265,6 +1265,9 @@ menu {
 @media screen and (min-width: 1210px) {
   .games {
     margin-bottom: 50px;
+  }
+  .games.container {
+    padding: 70px 0;
   }
   .games__text {
     padding: 0 15%;

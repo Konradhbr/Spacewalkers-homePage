@@ -1256,9 +1256,13 @@ menu {
   }
   .carousel-cell {
     width: 38%;
-    min-height: 500px;
+    height: 500px;
     border-radius: 5px;
     padding: 0 50px;
+  }
+  .carousel-cell img {
+    display: block;
+    max-height: 100%;
   }
 }
 

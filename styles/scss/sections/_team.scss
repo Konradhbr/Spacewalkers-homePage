@@ -19,13 +19,11 @@
   }
 
   &__items {
-    // max-height: 1500px;
     overflow-y: scroll;
-    overflow-x: hidden;
   }
 
   &__item {
-    cursor: pointer;
+    // cursor: pointer;
 
     &__title {
       position: relative;

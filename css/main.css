@@ -233,7 +233,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -243,6 +242,18 @@ html {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  z-index: 20;
 }
 
 .home {
@@ -768,9 +779,10 @@ menu {
   right: -100%;
   height: 100%;
   top: 0;
-  transition: all 1s;
+  transition: all 500ms;
   overflow-y: scroll;
   z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.45);
   background-color: #050947;
 }
 
@@ -794,7 +806,7 @@ menu {
 
 .menu__mobile--active {
   right: 0;
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .menu__mobile .socials {
@@ -941,10 +953,10 @@ menu {
   align-items: center;
   justify-content: space-between;
   height: 105px;
-  min-width: -webkit-fill-available;
-  z-index: 900;
+  z-index: 20;
   padding-top: 0 !important;
-  background-color: rgba(5, 9, 71, 0.65);
+  background-color: rgba(5, 9, 71, 0.55);
+  width: 90%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.45);
 }
 
@@ -953,7 +965,7 @@ menu {
 }
 
 .nav.nav--active {
-  background-color: #050947;
+  background-color: rgba(5, 9, 71, 0.55);
 }
 
 .nav.nav--scrolling {
@@ -1219,6 +1231,10 @@ menu {
   display: none;
 }
 
+.games.container {
+  padding: 70px 0;
+}
+
 @media screen and (min-width: 768px) {
   .games .game__item__image img {
     width: 65%;
@@ -1249,9 +1265,6 @@ menu {
 @media screen and (min-width: 1210px) {
   .games {
     margin-bottom: 50px;
-  }
-  .games.container {
-    padding: 0;
   }
   .games__text {
     padding: 0 15%;
@@ -1467,11 +1480,6 @@ menu {
 
 .team__items {
   overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.team__item {
-  cursor: pointer;
 }
 
 .team__item__title {

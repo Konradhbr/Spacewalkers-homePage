@@ -12,19 +12,20 @@
   align-items: center;
   justify-content: space-between;
   height: $navbar-height-xs;
-  min-width: -webkit-fill-available;
-  z-index: 900;
+  //min-width: -webkit-fill-available;
+  z-index: 20;
   padding-top: 0 !important;
-  background-color: rgba(5, 9, 71, 0.65);
-
+  background-color: rgba(5, 9, 71, 0.55);
+  width: 90%;
   border-bottom: 1px solid $color-white-45;
+  // overflow-y: scroll;
 
   &.container {
     padding: 0 5%;
   }
 
   &.nav--active {
-    background-color: rgba(5, 9, 71, 255);
+    background-color: rgba(5, 9, 71, 0.55);
   }
 
   &.nav--scrolling {

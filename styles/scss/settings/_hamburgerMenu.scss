@@ -4,15 +4,6 @@
 *  ============================
 */
 
-$size: 60px;
-$height: 20px;
-$width: 30px;
-$line-size: 3px;
-$line-color: #47c9af;
-$line-radius: $line-size;
-$to-translate: ($height - $line-size) / 2;
-$bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
-
 .menu {
   &__button {
     position: relative;
@@ -65,9 +56,6 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
       .menu__btn {
         display: flex;
         align-items: center;
-        // position: fixed;
-        // top: 20px;
-        // left: 20px;
         transform: rotate(180deg);
         width: 46px;
         height: 67px;
@@ -94,11 +82,6 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
         width: 20px;
         height: 4px;
       }
-
-      //  .menu__btn > span{
-      // 	  width: 23px;
-      //   height: 5px;
-      //  }
       .menu__btn > span::before {
         content: '';
         top: -8px;
@@ -108,15 +91,6 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
         top: 8px;
       }
     }
-
-    // &__icon {
-    //   position: absolute;
-    //   width: $width;
-    //   height: $height;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    // }
   }
 
   &__mobile {
@@ -125,9 +99,10 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
     right: -100%;
     height: 100%;
     top: 0;
-    transition: all 1s;
+    transition: all 500ms;
     overflow-y: scroll;
     z-index: 10;
+    border: 1px solid $color-white-45;
     background-color: rgba(5, 9, 71, 255);
 
     &__wrapper {
@@ -149,7 +124,7 @@ $bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
 
     &--active {
       right: 0;
-      transition: all 1s;
+      transition: all 500ms;
     }
 
     .socials {

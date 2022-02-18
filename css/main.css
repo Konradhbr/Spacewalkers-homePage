@@ -1273,7 +1273,7 @@ menu {
     padding: 0 15%;
   }
   .games .game__items {
-    padding: 0 0 0 15%;
+    padding: 0 15%;
   }
 }
 
@@ -1483,6 +1483,7 @@ menu {
 
 .team__items {
   overflow-y: scroll;
+  max-height: 1500px;
 }
 
 .team__item__title {
@@ -1584,6 +1585,7 @@ menu {
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
     justify-items: center;
     overflow: hidden;
+    max-height: none;
   }
   .team__item {
     width: 90%;

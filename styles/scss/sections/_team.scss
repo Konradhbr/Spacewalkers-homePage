@@ -20,6 +20,7 @@
 
   &__items {
     overflow-y: scroll;
+    max-height: 1500px;
   }
 
   &__item {
@@ -141,6 +142,7 @@
       grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
       justify-items: center;
       overflow: hidden;
+      max-height: none;
     }
 
     &__item {

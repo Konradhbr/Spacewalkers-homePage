@@ -329,9 +329,12 @@ header {
   .logos {
     padding-bottom: 30px;
   }
-  .logos img,
   .logos p {
     max-width: 200px;
+  }
+  .logos img {
+    width: 15%;
+    max-width: 140px;
   }
 }
 
@@ -872,7 +875,7 @@ menu {
     font-size: 28px;
   }
   .menu__mobile__wrapper {
-    background-position: center 84%;
+    background-position: center;
   }
   .menu__mobile__items {
     width: 100%;
@@ -1092,7 +1095,7 @@ menu {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: max-content;
     height: max-content;
     margin-left: -10%;
   }
@@ -1133,6 +1136,9 @@ menu {
   }
   .about__image {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1149,8 +1155,7 @@ menu {
   .about__text {
     width: 42%;
   }
-  .about__image {
-    width: 50%;
+  .about__image img {
     max-width: 540px;
   }
 }
@@ -1159,21 +1164,20 @@ menu {
   .about__text {
     width: 40%;
   }
-  .about__image {
-    width: 50%;
+  .about__image img {
     max-width: 600px;
   }
 }
 
 @media screen and (min-width: 1780px) {
-  .about__image {
+  .about__image img {
     max-width: 710px;
   }
 }
 
 @media screen and (min-width: 2010px) {
-  .about__image {
-    max-width: none;
+  .about__image img {
+    max-width: 950px;
   }
 }
 
@@ -1242,6 +1246,9 @@ menu {
 }
 
 @media screen and (min-width: 1010px) {
+  .games {
+    height: 90vh;
+  }
   .games__items {
     display: block;
   }
@@ -1288,6 +1295,9 @@ menu {
 }
 
 @media screen and (min-width: 1532px) {
+  .games {
+    height: 85vh;
+  }
   .games .game__item__image img {
     width: 92%;
   }
@@ -1300,7 +1310,16 @@ menu {
   .games .carousel-cell {
     width: 35%;
     padding: 0 70px;
-    height: 600px;
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 2010px) {
+  .games {
+    height: 100vh;
+  }
+  .games .carousel-cell {
+    height: 1000px;
   }
 }
 
@@ -1507,6 +1526,7 @@ menu {
   line-height: 100px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
   -webkit-text-fill-color: transparent;
+  z-index: 4;
 }
 
 .team__item__image {

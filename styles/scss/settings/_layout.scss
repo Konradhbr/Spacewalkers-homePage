@@ -98,9 +98,14 @@ header {
 @media screen and (min-width: $screen-lg) {
   .logos {
     padding-bottom: 30px;
-    img,
+
     p {
       max-width: 200px;
+    }
+
+    img {
+      width: 15%;
+      max-width: 140px;
     }
   }
 }

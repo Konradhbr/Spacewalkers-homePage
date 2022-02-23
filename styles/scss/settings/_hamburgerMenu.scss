@@ -133,7 +133,7 @@
       padding-bottom: 30px;
 
       h4 {
-        color: $blue;
+        color: #83a5e5;
       }
     }
 
@@ -280,6 +280,7 @@
     &__mobile {
       width: 25%;
       &__wrapper {
+        //background-position: center;
         background-size: 562%;
       }
       .logos {

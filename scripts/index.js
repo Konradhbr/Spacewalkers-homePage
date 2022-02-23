@@ -6,8 +6,8 @@ $(document).ready(function () {
     contain: true,
     pageDots: false,
     prevNextButtons: false,
-    groupCells: true,
-    groupCells: 2,
+    // groupCells: true,
+    // groupCells: 2,
     pageDots: false,
     prevNextButtons: false,
   });

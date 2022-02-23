@@ -10,12 +10,12 @@
   display: none !important;
 
   @media screen and (min-width: $screen-sm) {
-    display: flex !important;
+    display: block !important;
   }
 }
 
 .-mobile {
-  display: flex !important;
+  display: block !important;
 
   @media screen and (min-width: $screen-sm) {
     display: none !important;

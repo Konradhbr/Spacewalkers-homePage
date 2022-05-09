@@ -36,4 +36,17 @@
   .hide {
     display: none;
   }
+
+  &.button--lang {
+    margin-right: 15px;
+    margin-left: 15px;
+    &:hover {
+      span {
+        left: 37px;
+      }
+    }
+    span {
+      left: 17px;
+    }
+  }
 }

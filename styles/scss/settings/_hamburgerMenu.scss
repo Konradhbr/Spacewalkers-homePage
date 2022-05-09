@@ -133,7 +133,7 @@
       padding-bottom: 30px;
 
       h4 {
-        color: $blue;
+        color: #83a5e5;
       }
     }
 
@@ -158,6 +158,69 @@
       z-index: 10;
       text-align: left;
     }
+
+    .languages {
+      text-align: center;
+      //margin-top: 70px;
+      padding-bottom: 30px;
+
+      h4 {
+        color: #83a5e5;
+      }
+    }
+
+    .lang {
+      margin: 0 auto;
+    }
+
+    .tdlang {
+      .button {
+        &:hover {
+        }
+      }
+    }
+
+    .button_lang {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0.25em 0em;
+      border-radius: 10px;
+      width: 5em;
+      transition: 0.25s ease;
+
+      &:hover {
+        background: #b5d6b2;
+        transition: 0.25s ease;
+      }
+    }
+
+    // .button_lang:hover {
+    //   background: #b5d6b2;
+    //   transition: 0.25s ease;
+    // }
+
+    .current_lang {
+      // background: #b5d6b2;
+    }
+
+    .translation {
+      text-align: center;
+      margin: 0.5em;
+    }
+
+    // .english {
+    //   font-family: "Asap", sans-serif;
+    // }
+
+    // .chinese {
+    //   font-family: "Noto Sans SC", sans-serif;
+    //   font-size: 1.5em;
+    // }
+
+    // .japanese {
+    //   font-family: "Noto Sans JP", sans-serif;
+    //   font-size: 2em;
+    // }
   }
 }
 
@@ -280,6 +343,7 @@
     &__mobile {
       width: 25%;
       &__wrapper {
+        //background-position: center;
         background-size: 562%;
       }
       .logos {

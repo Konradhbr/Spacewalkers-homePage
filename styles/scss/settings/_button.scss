@@ -46,7 +46,13 @@
       }
     }
     span {
-      left: 17px;
+      left: 13px;
+
+			img {
+        width: 25px;
+        border: 1px solid black;
+        border-radius: 100%;
+			}
     }
   }
 }

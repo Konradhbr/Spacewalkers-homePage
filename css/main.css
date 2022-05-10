@@ -289,8 +289,8 @@ header {
 .logos {
   text-align: center;
   background: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .logos__items {
@@ -682,7 +682,13 @@ menu {
 }
 
 .button.button--lang span {
-  left: 17px;
+  left: 13px;
+}
+
+.button.button--lang span img {
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 100%;
 }
 
 /*
@@ -819,7 +825,7 @@ menu {
   background-repeat: no-repeat;
   position: relative;
   background-position: center 80%;
-  min-height: calc(100vh - 105px);
+  min-height: calc(113vh - 105px);
   top: 105px;
   display: flex;
   align-items: center;
@@ -836,10 +842,15 @@ menu {
   transition: all 500ms;
 }
 
+.menu__mobile__items .items__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .menu__mobile .socials {
   text-align: center;
-  margin-top: 70px;
   padding-bottom: 30px;
+  zoom: 0.8;
 }
 
 .menu__mobile .socials h4 {
@@ -857,7 +868,7 @@ menu {
 
 .menu__mobile__links a {
   color: #fff;
-  font-size: 35px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
@@ -872,7 +883,7 @@ menu {
 
 .menu__mobile .languages {
   text-align: center;
-  padding-bottom: 30px;
+  zoom: 0.8;
 }
 
 .menu__mobile .languages h4 {
@@ -902,6 +913,10 @@ menu {
   margin: 0.5em;
 }
 
+.menu .hide {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 1010px) {
   .menu__button {
     display: flex;
@@ -916,7 +931,7 @@ menu {
     align-items: center;
   }
   .menu__button h4 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0 !important;
   }
   .menu__button .hamburger-menu .menu__btn > span,
@@ -928,10 +943,11 @@ menu {
     overflow-x: hidden;
   }
   .menu__mobile__links a {
-    font-size: 28px;
+    font-size: 24px;
   }
   .menu__mobile__wrapper {
     background-position: center;
+    min-height: calc(100vh - 105px);
   }
   .menu__mobile__items {
     width: 100%;
@@ -940,6 +956,15 @@ menu {
     display: flex;
     padding-bottom: 160px;
     flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: static;
+    width: auto;
+    zoom: 0.8;
+  }
+  .menu__mobile .languages {
+    zoom: 0.8;
   }
   .menu__mobile .logos p {
     max-width: 280px;
@@ -964,9 +989,6 @@ menu {
   }
   .menu__mobile .logos__items {
     width: 67%;
-  }
-  .menu__mobile .socials {
-    padding-bottom: 120px;
   }
 }
 
@@ -1685,6 +1707,7 @@ menu {
   }
   .team__item__text {
     margin-top: -95px;
+    max-width: 340px;
   }
   .team__item__text h3 {
     font-size: 28px;
@@ -1692,6 +1715,7 @@ menu {
   .team__item__text p {
     font-size: 14px;
     line-height: 20px;
+    padding-top: 20px;
   }
 }
 
@@ -1703,7 +1727,10 @@ menu {
     font-size: 90px;
   }
   .team__item__text {
-    margin-top: -60px;
+    margin-top: -73px;
+  }
+  .team__item__text p {
+    padding-top: 0px;
   }
 }
 

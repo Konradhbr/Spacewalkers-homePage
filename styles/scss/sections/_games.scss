@@ -73,6 +73,7 @@
 @media screen and (min-width: $screen-sm) {
   .games {
     height: 90vh;
+    max-height: 1080px;
     &__items {
       display: block;
     }

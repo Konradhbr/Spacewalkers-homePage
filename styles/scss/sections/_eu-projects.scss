@@ -1,0 +1,119 @@
+.eu-projects {
+  .nav {
+    position: static;
+
+    &__right {
+      display: flex;
+      align-items: center;
+      zoom: 0.6;
+    }
+
+    .EU-logo {
+      margin-left: 30px;
+    }
+  }
+  .logo {
+    height: 40px;
+  }
+
+  .EU-logo {
+    img {
+      max-width: 80px;
+    }
+  }
+
+  .logos {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    // border: 1px solid $color-white-45;
+    //padding: $paddingXS;
+    //margin-top: 30px;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .eu-projects {
+    .nav {
+      &__right {
+        zoom: 1;
+      }
+
+      .EU-logo {
+        margin-left: 50px;
+      }
+    }
+    .logo {
+      width: 276px;
+      height: 61px;
+    }
+
+    &__text {
+      margin-top: 0;
+    }
+
+    // .page-content {
+    //   position: relative;
+    //   height: calc(100vh - 105px);
+    // }
+
+    // // .logos {
+    // //   position: absolute;
+    // //   bottom: 0;
+    // //   width: -webkit-fill-available;
+    // // }
+
+    // .eu-projects__text {
+    //   margin-top: 0px;
+    // }
+  }
+}
+
+// // @media screen and (min-width: $screen-md) {
+// //   .eu-projects {
+// //     .eu-projects__text {
+// //       padding: $paddingMD;
+// //     }
+// //   }
+// // }
+
+@media screen and (min-width: $screen-lg) {
+  .eu-projects {
+    &__text {
+      padding: 70px 15%;
+      min-height: 750px;
+    }
+
+    .page-content {
+      position: relative;
+      min-height: calc(100vh - 105px);
+    }
+
+    .logos {
+      position: absolute;
+      bottom: 0;
+      width: -webkit-fill-available;
+    }
+  }
+}
+
+// @media screen and (min-width: $screen-xl) {
+//   .eu-projects {
+//     .eu-projects__text {
+//       p {
+//         font-size: 20px;
+//       }
+//     }
+//   }
+// }

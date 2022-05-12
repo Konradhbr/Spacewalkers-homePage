@@ -107,6 +107,9 @@
 }
 @media screen and (min-width: $screen-md) {
   .banner {
+    &__top {
+      width: 45%;
+    }
     &__bottom {
       &::before {
         background-position: top center;
@@ -153,7 +156,7 @@
         width: 139%;
         height: 146%;
         max-width: 750px;
-        top: -27%;
+        top: -36%;
         left: -22%;
       }
     }

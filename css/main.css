@@ -883,6 +883,7 @@ menu {
 .menu__mobile .languages {
   text-align: center;
   zoom: 0.8;
+  margin-bottom: 30px;
 }
 
 .menu__mobile .languages h4 {
@@ -1205,7 +1206,7 @@ menu {
 
 @media screen and (min-width: 1010px) {
   .about {
-    min-height: 700px;
+    min-height: 810px;
     max-height: 1200px;
     height: calc(100vh - 80px);
     justify-content: space-between;
@@ -1856,6 +1857,9 @@ menu {
 }
 
 @media screen and (min-width: 1210px) {
+  .banner__top {
+    width: 45%;
+  }
   .banner__bottom::before {
     background-position: top center;
     background-size: 104%;
@@ -1895,7 +1899,7 @@ menu {
     width: 139%;
     height: 146%;
     max-width: 750px;
-    top: -27%;
+    top: -36%;
     left: -22%;
   }
 }

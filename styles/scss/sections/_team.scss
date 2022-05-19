@@ -7,7 +7,7 @@
 .team {
   width: auto;
   min-height: 1000px;
-  margin-bottom: -150px;
+  // margin-bottom: -150px;
 
   &__text {
     margin-bottom: 30px;
@@ -123,7 +123,7 @@
 
 @media screen and (min-width: $screen-sm) {
   .team {
-    margin-bottom: -200px;
+    // margin-bottom: -200px;
     min-height: 700px;
 
     &__text {

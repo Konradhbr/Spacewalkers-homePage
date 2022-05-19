@@ -1,0 +1,46 @@
+$content-margin-bottom: 30px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.decor {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+// @media screen and (min-width: $screen-sm) {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   p,
+//   .decor {
+//     margin-bottom: 20px;
+//   }
+// }
+
+// @media screen and (min-width: $screen-md) {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   p,
+//   .decor {
+//     margin-bottom: 20px;
+//   }
+// }
+
+@media screen and (min-width: $screen-lg) {
+  .decor {
+    margin-bottom: 35px;
+  }
+}
+
+.button {
+  margin-bottom: $content-margin-bottom;
+}

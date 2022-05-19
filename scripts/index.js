@@ -78,9 +78,9 @@ $(document).ready(function () {
       profession: 'Level Artist',
       plProfession: 'Projektant Poziomów',
       description:
-        'Geek, guitarist and saber fencer. Responsible for level design and environment art. Before joining Spacewalkers he was working as a Quality Assurance Specialist and Game Tester for such titles as Going Under and One Shell Straight to Hell. He also co-created mod to the Witcher 3: Wild Hunt: Farewell of the White Wolf.',
+        'Geek, guitarist and saber fencer. Responsible for level design and environment art. Before joining Spacewalkers he was working as a Quality Assurance Specialist and Game Tester for such titles as Going Under and One Shell Straight to Hell. He also co-created mod to the Witcher 2: Assassins of Kings: Farewell of the White Wolf.',
       plDescription:
-        'Geek, gitarzysta i szermierz. Odpowiada za tworzenie poziomów i kreowanie krajobrazu w naszych grach. Pracował jako Game Tester oraz Quality Assurance Specialist przy takich produkcjach jak Going Under oraz One Shell Straight to Hell. Współtworzył moda Pożegnania Białego Wilka do gry Wiedźmin 3: Dziki Gon.',
+        'Geek, gitarzysta i szermierz. Odpowiada za tworzenie poziomów i kreowanie krajobrazu w naszych grach. Pracował jako Game Tester oraz Quality Assurance Specialist przy takich produkcjach jak Going Under oraz One Shell Straight to Hell. Współtworzył moda Pożegnania Białego Wilka do gry Wiedźmin 2: Zabójcy Królów.',
     },
     {
       name: 'Maksymilian',
@@ -98,9 +98,9 @@ $(document).ready(function () {
       profession: '2D/3D Graphic Designer',
       plProfession: 'Grafik 2D/3D',
       description:
-        "Concept artist, illustrator and aspiring 3D artist. A man who never gives up. He participated in such projects as: The House of Fables, Eventide 2: Sorcerer's Mirror, Eventide 3: Legacy of Legends, Chronicles of Magic: Divided Kingdoms, Dreamwalker: Never Fall Asleep, Trains VR, Wrath of Loki, Fields of Glory, Potion Master, Belly Rumble, Depths of Atlantis, The Knights of Unity, Tools up! - Garden Party.",
+        "Concept artist, illustrator and aspiring 3D artist. A man who never gives up. He participated in such projects as: Eventide 2: Sorcerer's Mirror, Eventide 3: Legacy of Legends, Chronicles of Magic: Divided Kingdoms, Dreamwalker: Never Fall Asleep, Trains VR, Wrath of Loki, Fields of Glory, Potion Master, Belly Rumble, Depths of Atlantis, Tools up! - Garden Party.",
       plDescription:
-        "Ilustrator i artysta specjalizujący się w modelowaniu 3D. Nigdy się nie poddaje. Brał udział w takich projektach jak: The House of Fables, Eventide 2: Sorcerer's Mirror, Eventide 3: Legacy of Legends, Chronicles of Magic: Divided Kingdoms, Dreamwalker: Never Fall Asleep, Trains VR, Wrath of Loki, Fields of Glory, Potion Master, Belly Rumble, Depths of Atlantis, The Knights of Unity, Tools up! - Garden Party.",
+        "Ilustrator i artysta specjalizujący się w modelowaniu 3D. Nigdy się nie poddaje. Brał udział w takich projektach jak: Eventide 2: Sorcerer's Mirror, Eventide 3: Legacy of Legends, Chronicles of Magic: Divided Kingdoms, Dreamwalker: Never Fall Asleep, Trains VR, Wrath of Loki, Fields of Glory, Potion Master, Belly Rumble, Depths of Atlantis, Tools up! - Garden Party.",
     },
     {
       name: 'Kamil',
@@ -117,8 +117,10 @@ $(document).ready(function () {
       surname: 'Hartman',
       profession: 'Story Writer',
       plProfession: 'Autor opowieści',
-      description: 'Writes the story and the dialogue in our games. Pretty fun stuff!',
-      plDescription: 'Tworzy fabułę i dialogi w naszych grach. Pisarz z lekkim piórem i wielkim poczuciem humoru.',
+      description:
+        'Gamer/Gamedev and Reader/Writer, working on the narrative design for Interregnum Chronicles. Slowly yet avidly expanding to encompass many forms of talent, like a galaxy! Or perhaps a stubborn rash. Previously worked on Immortal Planet and Door in the Woods as a writer of story content.',
+      plDescription:
+        'Gracz, gamedeveloper, zapalony pisarz i entuzjasta książek. Pracuje  nad narracją w Interregnum Chronicles. Powoli, aczkolwiek z zapałem rozwija się jak galaktyka, albo jak sam twierdzi uparta wysypka. Poprzednio pracował przy Immortal Planet i Door in the Woods jako autor treści fabularnych.',
     },
     {
       name: 'Jarosław',
@@ -136,9 +138,9 @@ $(document).ready(function () {
       profession: 'Programmer',
       plProfession: 'Programista',
       description:
-        'Creates Machine Learning models, makes sure the AI will take our jobs. In his free time plays football and makes music. Previously he was working for Aptiv to create 3D Gesture Recognition for BMW.',
+        'Creates Machine Learning models, makes sure the AI won’t take our jobs. In his free time plays football and makes music. Previously he was working for Aptiv to create 3D Gesture Recognition for BMW.',
       plDescription:
-        'Odpowiada za machine learning i dba o to, żeby sztuczna inteligencja wygryzła nas z czasem z pracy. Fan piłki nożnej i tworzenia muzyki. Wcześniej pracował dla Aptiv przy tworzeniu 3D Gesture Recognition do samochodów BMW.',
+        'Odpowiada za machine learning i dba o to, żeby sztuczna inteligencja nie wygryzła nas z czasem z pracy. Fan piłki nożnej i tworzenia muzyki. Wcześniej pracował dla Aptiv przy tworzeniu 3D Gesture Recognition do samochodów BMW.',
     },
     {
       name: 'Jakub',
@@ -239,6 +241,7 @@ $(document).ready(function () {
     }
   }
 });
+
 //=============================
 //  [games]
 //=============================

@@ -88,6 +88,10 @@
       flex-direction: column;
       justify-content: center;
       width: 40%;
+
+      &--pl {
+        width: 55%;
+      }
       // max-width: 570px;
     }
     .socials {
@@ -106,6 +110,10 @@
 
     &__text {
       width: 35%;
+
+      &--pl {
+        width: 55%;
+      }
     }
 
     .socials {
@@ -119,6 +127,16 @@
       a {
         margin-bottom: 10px;
         margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .hero-section {
+    &__text {
+      &--pl {
+        width: 50%;
       }
     }
   }

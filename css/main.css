@@ -1192,6 +1192,9 @@ menu {
     justify-content: center;
     width: 40%;
   }
+  .hero-section__text--pl {
+    width: 55%;
+  }
   .hero-section .socials {
     position: absolute;
     bottom: 5%;
@@ -1208,6 +1211,9 @@ menu {
   .hero-section__text {
     width: 35%;
   }
+  .hero-section__text--pl {
+    width: 55%;
+  }
   .hero-section .socials {
     display: flex;
     justify-content: center;
@@ -1219,6 +1225,12 @@ menu {
   .hero-section .socials a {
     margin-bottom: 10px;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1532px) {
+  .hero-section__text--pl {
+    width: 50%;
   }
 }
 
@@ -1844,6 +1856,10 @@ menu {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 820px;
+}
+
+.banner a {
+  color: #446fc2;
 }
 
 @media screen and (min-width: 480px) {

@@ -53,7 +53,9 @@
               <li><a href="#interregnum" class="menu-link">interregnum</a></li>
               <li><a href="#games" class="menu-link">nasze gry</a></li>
               <li><a href="#team" class="menu-link">zespół</a></li>
+              <li><a href="#eu-projects" class="menu-link">projekty unijne</a></li>
               <li><a href="#banner" class="menu-link">inwestuj</a></li>
+
               <!-- <li><a href="">career</a></li>
               <li><a href="">blog</a></li>
               <li><a href="">contact</a></li> -->
@@ -81,12 +83,12 @@
                       <td class="tdlang">
                         <a href="/">
                           <div id="en" class="button button--lang current_lang">
-                            <span><img src="/assets/images/png/united-states.png" alt="English-flag" /></span>
+                            <span> <img src="/assets/images/png/united-states.png" alt="English-flag" /></span>
                           </div>
                         </a>
                       </td>
                       <td class="tdlang">
-                        <a href="pl">
+                        <a href="javascript:window.location.reload(true)">
                           <div id="pl" class="button button--lang">
                             <span><img src="/assets/images/png/poland.png" alt="Polish-flag" /></span>
                           </div>
@@ -108,8 +110,8 @@
           </div>
         </div>
         <section class="hero-section container" id="hero">
-          <div class="hero-section__text">
-            <h1>gry z niezwykłą <span class="text--gradient">fabułą</span></h1>
+          <div class="hero-section__text hero-section__text--pl">
+            <h1>Spradź niezwykłą fabułę <span class="text--gradient">naszych gier</span></h1>
             <p>
               Nasze gry powstają w świecie wykreowanym przez autora bestsellerowej powieści sci-fi "Interregnum"
               Przemysława Kardę. W tym uniwersum chodzi tylko o przetrwanie. Ziemia została skuta lodem, a pozostałe
@@ -296,54 +298,54 @@
             </div>
             <div class="team__items"></div>
           </section>
-					  <section class="eu-projects container" id="eu-projects">
+
+          <section class="eu-projects container" id="eu-projects">
             <div class="eu-projects__text">
               <span class="decor">dofinansowania</span>
               <h2>Projekty Unijne</h2>
-             <p>
-              SPACEWALKERS Sp. z o.o. realizuje innowacyjny projekt badawczy pn.
-              <span class="eu-projects__text--bold"
-                >„Inteligentny system kreacji map do gier 3D oparty na platformie Unreal Engine wykorzystujący techniki
-                uczenia maszynowego”</span
-              >
-              w ramach programu sektorowego GAME INN (POIR 1.2. GAME INN), współfinansowanego przez Narodowe Centrum
-              Badań i Rozwoju ze środków Unii Europejskie.
-            </p>
-            <p>
-              <span class="eu-projects__text--bold">
-                SPACEWALKERS – projekt badawczy:<br />
-                Koszt całkowity projektu (koszty kwalifikowalne): 11 013 701,62 PLN <br />
-                Łączna kwota dofinansowania: 8 255 262,71 PLN <br
-              /></span>
-            </p>
-            <p>
-              W ramach projektu prowadzone są badania przemysłowe, eksperymentalne prace rozwojowe oraz prace
-              przedwdrożeniowe. Rezultatem projektu będzie innowacyjne narzędzie pozwalające na półautomatyczne
-              tworzenie nowych poziomów do gier we współpracy z projektantem poziomów. System będzie unikalnym
-              rozwiązaniem na skalę międzynarodową.
-            </p>
-            <p>
-              Odbiorcami projektu będą przede wszystkim producenci gier komputerowych, dla których to narzędzie będzie
-              sposobem na zmniejszenie kosztów produkcji oraz tworzenie gier opartych o dynamiczną kreacje map w trakcie
-              rozgrywki. Inteligentny system kreacji map zostanie wykorzystany przy produkcji gry
-              <span class="eu-projects__text--bold">Interregnum Chronicles: False Prophet</span> , Odbiorcami projektu
-              będą przede wszystkim producenci gier komputerowych, dla których to narzędzie będzie sposobem na
-              zmniejszenie kosztów produkcji oraz tworzenie gier opartych o dynamiczną kreacje map w trakcie rozgrywki.
-              Inteligentny system kreacji map zostanie wykorzystany przy produkcji gry.
-            </p>
-            <p>
-              W skład kadry zarządzającej wchodzi
-              <span class="eu-projects__text--bold">Tomasz Wacławek</span> (Kierownik zarządzający projektem, CEO) oraz
-              <span class="eu-projects__text--bold">Maksymilian Strzelecki</span> (Zastępca Kierownika zarządzającego).
-              Oboje posiadają bogate doświadczenie w świecie produkcji gier. Czerpiąc ze swojego doświadczenia z branży
-              gier komputerowych od ponad roku kierują projektem, gdzie wraz z zespołem tworzą rozwiązanie na tyle
-              modularne i uniwersalne, a jednocześnie dostatecznie sprecyzowane, aby trafić do odpowiednio dużej grupy
-              odbiorców, tj. producentów gier gatunku Action/Shooter/RPG/Strategy.
-            </p>
-            <p>Realizacja projektu ma zakończyć się w II kwartale 2023 roku.</p>
-                <div class="eu-projects__wrapper">
-                  <img class="eu-projects__image" src="/assets/images/png/Flag_of_Europe.png" alt="eu-flag" />
-                </div>
+              <p>
+                SPACEWALKERS Sp. z o.o. realizuje innowacyjny projekt badawczy pn.
+                <span class="eu-projects__text--bold"
+                  >„Inteligentny system kreacji map do gier 3D oparty na platformie Unreal Engine wykorzystujący
+                  techniki uczenia maszynowego”</span
+                >
+                w ramach programu sektorowego GAME INN (POIR 1.2. GAME INN), współfinansowanego przez Narodowe Centrum
+                Badań i Rozwoju ze środków Unii Europejskie.
+              </p>
+              <p>
+                <span class="eu-projects__text--bold">
+                  SPACEWALKERS – projekt badawczy:<br />
+                  Koszt całkowity projektu (koszty kwalifikowalne): 11 013 701,62 PLN <br />
+                  Łączna kwota dofinansowania: 8 255 262,71 PLN <br
+                /></span>
+              </p>
+              <p>
+                W ramach projektu prowadzone są badania przemysłowe, eksperymentalne prace rozwojowe oraz prace
+                przedwdrożeniowe. Rezultatem projektu będzie innowacyjne narzędzie pozwalające na półautomatyczne
+                tworzenie nowych poziomów do gier we współpracy z projektantem poziomów. System będzie unikalnym
+                rozwiązaniem na skalę międzynarodową.
+              </p>
+              <p>
+                Odbiorcami projektu będą przede wszystkim producenci gier komputerowych, dla których to narzędzie będzie
+                sposobem na zmniejszenie kosztów produkcji oraz tworzenie gier opartych o dynamiczną kreacje map w
+                trakcie rozgrywki. Inteligentny system kreacji map zostanie wykorzystany przy produkcji gry
+                <span class="eu-projects__text--bold">Interregnum Chronicles: False Prophet</span> , Odbiorcami projektu
+                będą przede wszystkim producenci gier komputerowych, dla których to narzędzie będzie sposobem na
+                zmniejszenie kosztów produkcji oraz tworzenie gier opartych o dynamiczną kreacje map w trakcie
+                rozgrywki. Inteligentny system kreacji map zostanie wykorzystany przy produkcji gry.
+              </p>
+              <p>
+                W skład kadry zarządzającej wchodzi
+                <span class="eu-projects__text--bold">Tomasz Wacławek</span> (Kierownik zarządzający projektem, CEO)
+                oraz <span class="eu-projects__text--bold">Maksymilian Strzelecki</span> (Zastępca Kierownika
+                zarządzającego). Oboje posiadają bogate doświadczenie w świecie produkcji gier. Czerpiąc ze swojego
+                doświadczenia z branży gier komputerowych od ponad roku kierują projektem, gdzie wraz z zespołem tworzą
+                rozwiązanie na tyle modularne i uniwersalne, a jednocześnie dostatecznie sprecyzowane, aby trafić do
+                odpowiednio dużej grupy odbiorców, tj. producentów gier gatunku Action/Shooter/RPG/Strategy.
+              </p>
+              <p>Realizacja projektu ma zakończyć się w II kwartale 2023 roku.</p>
+              <div class="eu-projects__wrapper">
+                <img class="eu-projects__image" src="/assets/images/png/Flag_of_Europe.png" alt="eu-flag" />
               </div>
             </div>
           </section>
@@ -364,8 +366,8 @@
               <div class="banner__bottom">
                 <p>
                   Nasze gry w Spacewalkers Studio powstają z pomocą zaangażowanej społeczności na platformie
-                  crowdfundingowej <a href="tecra.space">tecra.space</a>. Sprawdź w jaki sposób możesz zarobić na
-                  tworzeniu gier!
+                  crowdfundingowej <a href="https://tecra.space/spacewalkers-project">tecra.space</a>. Sprawdź w jaki
+                  sposób możesz zarobić na tworzeniu gier!
                 </p>
               </div>
             </div>

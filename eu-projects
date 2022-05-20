@@ -24,11 +24,11 @@
             <img src="/assets/images/png/logo-spacewalkers.png" alt="logo" class="logo" />
           </div>
           <div class="nav__right">
-            <a href="projekty-unijne">
+            <!-- <a href="projekty-unijne">
               <div id="pl" class="button button--lang">
                 <span><img src="/assets/images/png/poland.png" alt="Polish-flag" /></span>
               </div>
-            </a>
+            </a> -->
             <div class="EU-logo"><img src="/assets/images/png/european-union.png" alt="EU flag" /></div>
           </div>
         </nav>

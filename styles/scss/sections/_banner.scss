@@ -50,6 +50,10 @@
     background-repeat: no-repeat;
     min-height: 820px;
   }
+
+  a {
+    color: $blue;
+  }
 }
 
 @media screen and (min-width: $screen-xs) {

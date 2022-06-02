@@ -16,16 +16,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
     <script type="text/javascript" src="scripts/index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" type="image/jpg" href="assets/images/jpg/header.jpg" />
-    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen" /> -->
     <title>Spacewalkers games</title>
   </head>
   <body>
-    <!-- <div class="background"></div> -->
     <div id="home" class="home">
       <header>
         <nav class="nav container">

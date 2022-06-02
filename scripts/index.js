@@ -48,6 +48,32 @@ $(document).ready(function () {
   });
 
   //=============================
+  //  [text editor]
+  //=============================
+  // console.log('asdasd');
+  // var editor = $('#editor');
+  // var editorOptions = {
+  //   debug: 'info',
+  //   modules: {
+  //     toolbar: '#toolbar',
+  //   },
+  //   placeholder: 'Compose an epic...',
+  //   readOnly: true,
+  //   theme: 'snow',
+  // };
+
+  // console.log('sdasd');
+
+  // var quill = new Quill(editor, editorOptions);
+  // $(editor).data('quill', quill);
+
+  // function getQuillInstanceText(editor) {
+  //   var quill = $(editor).data('quill');
+  //   var text = quill.getText();
+  //   return text;
+  // }
+
+  //=============================
   //  [team members]
   //=============================
   const photoURL = '/assets/images/jpg/team/';

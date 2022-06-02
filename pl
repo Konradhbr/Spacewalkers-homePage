@@ -147,6 +147,8 @@
                 czołowych polskich studio. Zdecydowaliśmy się połączyć nasze umiejętności i pasje żeby wspólnie osiągnąć
                 jeszcze więcej i wydawać najlepsze, niezależne gry.
               </p>
+              <h2>Spacewalkers <span class="text--gradient">blog</span></h2>
+
               <a href="https://www.spacewalkers.games/blog" target="_blank">
                 <div class="button">
                   <span>sprawdź nasz blog</span>
@@ -386,8 +388,7 @@
               <ul>
                 <li><a href="#hero">start</a></li>
                 <li><a href="https://tecra.space/spacewalkers-project" target="_blank">inwestuj</a></li>
-                <!-- <li><a href="">career</a></li>
-                <li><a href="">contact</a></li> -->
+                <li><a href="/blog/pl/blog.html" target="_blank">blog</a></li>
               </ul>
             </div>
           </div>

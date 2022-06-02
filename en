@@ -149,6 +149,8 @@
                 studios. After creating multitude of games both with publishers and while independent, we decided to
                 pool our resources, know-how and passion to create a gamedev studio that will achieve even more.
               </p>
+              <h2>Spacewalkers <span class="text--gradient">blog</span></h2>
+
               <a href="https://www.spacewalkers.games/blog" target="_blank">
                 <div class="button">
                   <span>check our blog</span>
@@ -389,8 +391,7 @@
               <ul>
                 <li><a href="#hero">start</a></li>
                 <li><a href="https://tecra.space/spacewalkers-project" target="_blank">investing</a></li>
-                <!-- <li><a href="">career</a></li>
-                <li><a href="">contact</a></li> -->
+                <li><a href="/blog/en/blog.html" target="_blank">blog</a></li>
               </ul>
             </div>
           </div>

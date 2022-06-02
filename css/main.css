@@ -1653,6 +1653,10 @@ menu {
   margin-bottom: 20px;
 }
 
+.team__item {
+  transition: all 0.3s ease-in-out;
+}
+
 .team__item__title {
   position: relative;
   top: 25px;

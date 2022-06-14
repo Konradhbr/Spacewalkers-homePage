@@ -2058,6 +2058,34 @@ menu {
   margin: 0 -15px;
 }
 
+.blog .post__content {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.blog .post__content .date {
+  color: black;
+}
+
+.blog .post__content .button span {
+  color: black;
+}
+
+.blog .post__content .row {
+  margin-top: 50px;
+}
+
+.blog .post__content p {
+  font-family: sans-serif;
+}
+
+.blog .post__content h4 {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+
 .blog .post__item {
   display: block;
   height: auto;
@@ -2113,6 +2141,10 @@ menu {
   font-size: 25px;
 }
 
+.blog .post__item__content {
+  all: revert;
+}
+
 .blog .post__item .row {
   border-top: 1px solid black;
   padding: 0 25px;
@@ -2131,6 +2163,12 @@ menu {
     width: 410px;
     height: 713px;
     margin: 0 25px 100px 25px;
+  }
+  .blog .post__content {
+    padding: 40px;
+  }
+  .blog .post__content h4 {
+    font-size: 30px;
   }
 }
 

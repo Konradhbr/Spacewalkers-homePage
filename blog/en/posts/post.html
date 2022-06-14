@@ -45,8 +45,8 @@
   </body>
   <script>
     $(document).ready(function () {
-      const apiKey = 'AIzaSyAbxJCyvJTeVDjCkaegULL8XY-bMY9wfDM';
-      const blogID = '8022538418933434219';
+      const apiKey = 'AIzaSyB13qVBRpI81baMbMTIkqxGkjjfJZJmxLs';
+      const blogID = '4895522093406441971';
       const blogApi = `https://www.googleapis.com/blogger/v3/blogs/${blogID}?key=${apiKey}`;
       const postsApi = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${apiKey}`;
       axios.get(postsApi).then(response => {
@@ -59,12 +59,14 @@
           const queryString = window.location.search;
           const urlParams = new URLSearchParams(queryString);
           const id = urlParams.get('id');
-
           for (post = 0; post < posts.length; post++) {
             if (posts[post].id === id) {
               $('.post__content').append(
                 `	<article>
+								<h4>${posts[post].title}</h4> </br>
+								<div class="post__item__content">
 								${posts[post].content}
+								</div>
 									<div class="row">
 											<p class="date">
 												Published: </br>

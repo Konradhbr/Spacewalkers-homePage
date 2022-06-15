@@ -20,7 +20,15 @@
   .post__content {
     background-color: $color-white-60;
     border-radius: 40px;
-    padding: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: auto;
+    margin: 0 auto;
+
+    img {
+      width: -webkit-fill-available;
+      display: flex;
+    }
 
     .date {
       color: black;
@@ -145,7 +153,7 @@
       margin: 0 25px 100px 25px;
     }
     .post__content {
-      padding: 40px;
+      max-width: 720px;
 
       h4 {
         font-size: 30px;

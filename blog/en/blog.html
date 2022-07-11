@@ -64,9 +64,7 @@
           for (post = 0; post < posts.length; post++) {
             $('.posts').append(
               `
-							<article class="post__item" style="cursor: pointer;" onclick="location.href='/blog/en/posts/post.html?id=${
-                posts[post].id
-              }';">
+							<article class="post__item" style="cursor: pointer;" onclick="location.href='/blog/en/posts/post.html?id=${posts[post].id}';">
                   <div class="post__item__inner">
                     <div class="post__item__text">
 										<h3>${posts[post].title}</h3> </br>
@@ -75,11 +73,7 @@
 										</div>
 										</div>
 										<div class="row">
-											<p class="date">
-												Published: </br>
-												${posts[post].published.slice(0, 10)}
-											</p>
-										
+								
 												<div class="button">
 													<span>czytaj więcej</span>
 												</div>
